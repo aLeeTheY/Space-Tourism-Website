@@ -37,9 +37,9 @@
     <br />
     <a href="https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3">Original Layout</a>
     &middot;
-    <a href="https://ableeweean.github.io/Space-Tourism-Website/">View Demo</a>
+    <a href="https://aLeeTheY.github.io/Space-Tourism-Website/">View Demo</a>
     &middot;
-    <a href="https://github.com/aBLeeWeeAN/Space-Tourism-Website/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/aLeeTheY/Space-Tourism-Website/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
   </p>
 </div>
 
@@ -87,7 +87,7 @@ Key technical notes:
 
 You can see a **preview of the website** in the image below:
 
-[![Space Tourism Website Preview][website-preview]](https://ableeweean.github.io/Space-Tourism-Website/)
+[![Space Tourism Website Preview][website-preview]](https://aLeeTheY.github.io/Space-Tourism-Website/)
 
 
 
@@ -142,7 +142,7 @@ First, install [Node.js][Node.js-url]. Then, download this repository as a ZIP a
 * git
 
   ```sh
-  git clone https://github.com/aBLeeWeeAN/Space-Tourism-Website
+  git clone https://github.com/aLeeTheY/Space-Tourism-Website
   ```
 
 Navigate to the project folder in your terminal and run the following command to install all project dependencies:
@@ -189,7 +189,7 @@ Alternatively, to launch a local development server, use the following command:
 <!-- LICENSE -->
 ## License
 
-Copyright © 2025 [Vladimir Nikulin](https://github.com/aBLeeWeeAN).<br />
+Copyright © 2025 [Vladimir Nikulin](https://github.com/aLeeTheY).<br />
 This project is [MIT][license-url] licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -201,7 +201,7 @@ This project is [MIT][license-url] licensed.
 
 👤 **Vladimir Nikulin**
 
-* Github: [@aBLeeWeeAN](https://github.com/aBLeeWeeAN)
+* Github: [@aLeeTheY](https://github.com/aLeeTheY)
 * Email: [mail.jorey@gmail.com](mailto:mail.jorey@gmail.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -234,20 +234,20 @@ This project is [MIT][license-url] licensed.
 
 
 
-[contributors-shield]: https://img.shields.io/github/contributors/aBLeeWeeAN/Space-Tourism-Website.svg?style=for-the-badge
-[contributors-url]: https://github.com/aBLeeWeeAN/Space-Tourism-Website/graphs/contributors
+[contributors-shield]: https://img.shields.io/github/contributors/aLeeTheY/Space-Tourism-Website.svg?style=for-the-badge
+[contributors-url]: https://github.com/aLeeTheY/Space-Tourism-Website/graphs/contributors
 
-[forks-shield]: https://img.shields.io/github/forks/aBLeeWeeAN/Space-Tourism-Website.svg?style=for-the-badge
-[forks-url]: https://github.com/aBLeeWeeAN/Space-Tourism-Website/network/members
+[forks-shield]: https://img.shields.io/github/forks/aLeeTheY/Space-Tourism-Website.svg?style=for-the-badge
+[forks-url]: https://github.com/aLeeTheY/Space-Tourism-Website/network/members
 
-[stars-shield]: https://img.shields.io/github/stars/aBLeeWeeAN/Space-Tourism-Website.svg?style=for-the-badge
-[stars-url]: https://github.com/aBLeeWeeAN/Space-Tourism-Website/stargazers
+[stars-shield]: https://img.shields.io/github/stars/aLeeTheY/Space-Tourism-Website.svg?style=for-the-badge
+[stars-url]: https://github.com/aLeeTheY/Space-Tourism-Website/stargazers
 
-[issues-shield]: https://img.shields.io/github/issues/aBLeeWeeAN/Space-Tourism-Website.svg?style=for-the-badge
-[issues-url]: https://github.com/aBLeeWeeAN/Space-Tourism-Website/issues
+[issues-shield]: https://img.shields.io/github/issues/aLeeTheY/Space-Tourism-Website.svg?style=for-the-badge
+[issues-url]: https://github.com/aLeeTheY/Space-Tourism-Website/issues
 
-[license-shield]: https://img.shields.io/github/license/aBLeeWeeAN/Space-Tourism-Website.svg?style=for-the-badge
-[license-url]: https://github.com/aBLeeWeeAN/Space-Tourism-Website/blob/main/LICENSE
+[license-shield]: https://img.shields.io/github/license/aLeeTheY/Space-Tourism-Website.svg?style=for-the-badge
+[license-url]: https://github.com/aLeeTheY/Space-Tourism-Website/blob/main/LICENSE
 
 
 
