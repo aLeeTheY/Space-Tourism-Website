@@ -120,7 +120,7 @@ Below is a list of browsers in which this website was tested and rendered correc
 <br />
 
 > [!IMPORTANT]
-> Browser compatibility was verified for version 1.0.3. As of the testing date, the site is fully functional in the latest versions of [all supported browsers](#supported-browsers).
+> Browser compatibility was verified for version **1.0.4**. As of the testing date, the site is fully functional in the latest versions of [all supported browsers](#supported-browsers).
 >
 > **Last verification date: 10 February 2026**
 
