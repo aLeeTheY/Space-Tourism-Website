@@ -102,24 +102,22 @@ This website is made using the following technologies:
 - [![Node.js][Node.js-logo]][Node.js-url]
 - [![Git][Git-logo]][Git-url]
 
-### Supported Browsers
+### Supported Browsershttps://nodejs.org/
 
 Below is a list of browsers in which this website was tested and rendered correctly:
 
-- [![Opera GX][OperaGX-logo]][OperaGX-url]
-- [![Google Chrome][GoogleChrome-logo]][GoogleChrome-url]
 - [![Microsoft Edge][MicrosoftEdge-logo]][MicrosoftEdge-url]
+- [![Google Chrome][GoogleChrome-logo]][GoogleChrome-url]
+- [![Yandex][Yandex-logo]][Yandex-url]
 - [![Firefox][Firefox-logo]][Firefox-url]
-- [![Arc][Arc-logo]][Arc-url]
-- [![Brave][Brave-logo]][Brave-url]
-- [![Vivaldi][Vivaldi-logo]][Vivaldi-url]
+- [![Opera][Opera-logo]][Opera-url]
 
 <br />
 
 > [!IMPORTANT]
-> Browser compatibility was verified for the 1.0.0 release. The site displayed correctly in the latest versions of all [the browsers listed above](#supported-browsers) at that time.
+> Browser compatibility was verified for version 1.0.2. As of the testing date, the site is fully functional in the latest versions of [all supported browsers](#supported-browsers).
 >
-> **Last verification date: 3 December 2025**
+> **Last verification date: 10 February 2026**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -225,18 +223,14 @@ This project is [MIT][license-url] licensed.
 [license-shield]: https://img.shields.io/github/license/aLeeTheY/Space-Tourism-Website.svg?style=for-the-badge
 [license-url]: https://github.com/aLeeTheY/Space-Tourism-Website/blob/main/LICENSE
 [website-preview]: public/assets/images/website_preview.gif
-[OperaGX-logo]: https://img.shields.io/badge/Opera%20GX-EE2950?logo=operagx&logoColor=fff&style=for-the-badge
-[OperaGX-url]: https://www.opera.com/gx/
+[Opera-logo]: https://img.shields.io/badge/Opera-FF1B2D?logo=Opera&logoColor=white&style=for-the-badge
+[Opera-url]: https://www.opera.com/
 [GoogleChrome-logo]: https://img.shields.io/badge/Google%20Chrome-4285F4?logo=GoogleChrome&logoColor=white&style=for-the-badge
 [GoogleChrome-url]: https://www.google.com/chrome/
 [MicrosoftEdge-logo]: https://custom-icon-badges.demolab.com/badge/Microsoft%20Edge-2771D8?logo=edge-white&logoColor=white&style=for-the-badge
 [MicrosoftEdge-url]: https://www.microsoft.com/en-us/edge/
 [Firefox-logo]: https://img.shields.io/badge/Firefox-FF7139?logo=firefoxbrowser&logoColor=white&style=for-the-badge
 [Firefox-url]: https://www.firefox.com/
-[Arc-logo]: https://img.shields.io/badge/Arc-FCBFBD?logo=arc&logoColor=000&style=for-the-badge
-[Arc-url]: https://arc.net/
-[Brave-logo]: https://img.shields.io/badge/Brave-FB542B?logo=Brave&logoColor=white&style=for-the-badge
-[Brave-url]: https://brave.com/
-[Vivaldi-logo]: https://img.shields.io/badge/Vivaldi-EF3939?logo=Vivaldi&logoColor=white&style=for-the-badge
-[Vivaldi-url]: https://vivaldi.com/
+[Yandex-logo]: https://img.shields.io/badge/Yandex%20Browser-fc3f1d?style=for-the-badge&logo=yandex&logoColor=white
+[Yandex-url]: https://browser.yandex.com/
 [WordPress-url]: https://wordpress.com/
