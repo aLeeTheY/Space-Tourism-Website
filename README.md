@@ -1,5 +1,7 @@
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+
 <a id="readme-top"></a>
+
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
 *** that would make this better, please fork the repo and create a pull request
@@ -7,8 +9,6 @@
 *** Don't forget to give the project a star!
 *** Thanks again! Now go create something AMAZING! :D
 -->
-
-
 
 <!-- PROJECT SHIELDS -->
 <!--
@@ -18,13 +18,12 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -32,253 +31,212 @@
   <h1 align="center">Space Tourism Website</h1>
 
   <p align="center">
-    A multi-page website built using a Figma layout. It supports desktops, tablets and phones.
+    Многостраничный адаптивный сайт вымышленной компании космического туризма.<br />
+    Сделан по макету из Figma — чистый HTML + SCSS + TypeScript, без фреймворков.
     <br />
     <br />
-    <a href="https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3">Original Layout</a>
+    <a href="https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3">Дизайн (макет)</a>
     &middot;
-    <a href="https://aLeeTheY.github.io/Space-Tourism-Website/">View Demo</a>
+    <a href="https://aLeeTheY.github.io/Space-Tourism-Website/">Демо</a>
     &middot;
-    <a href="https://github.com/aLeeTheY/Space-Tourism-Website/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/aLeeTheY/Space-Tourism-Website/issues/new?labels=bug&template=bug-report---.md">Сообщить об ошибке</a>
   </p>
+
+[![Русский](https://img.shields.io/badge/Русский-blue)](README.md)
+[![English](https://img.shields.io/badge/English-blue)](README.en-US.md)
+
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <br />
 <details>
-  <summary>Table of Contents</summary>
+  <summary>Содержание</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#о-проекте">О проекте</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
-        <li><a href="#supported-browsers">Supported Browsers</a></li>
+        <li><a href="#используемые-технологии">Используемые технологии</a></li>
+        <li><a href="#поддерживаемые-браузеры">Поддерживаемые браузеры</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#начало-работы">Начало работы</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#build-static-files">Build Static Files</a></li>
+        <li><a href="#предварительные-требования">Предварительные требования</a></li>
+        <li><a href="#компиляция-статических-файлов">Компиляция статических файлов</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#author">Author</a></li>
+    <li><a href="#использование">Использование</a></li>
+    <li><a href="#лицензия">Лицензия</a></li>
+    <li><a href="#автор">Автор</a></li>
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
-## About The Project
 
-This project is part of my portfolio and demonstrates my skills in creating websites based on client-provided mockups - either in [Figma](https://www.figma.com/) or [Photoshop](https://www.adobe.com/products/photoshop.html).
+## О проекте
 
-The main goal was to build a clean, high-performance front-end foundation without relying on external UI frameworks or a CMS backend.
+Этот проект является частью моего портфолио и демонстрирует мои навыки в создании сайтов по макетам, предоставленным заказчиком — как в [Figma](https://www.figma.com/), так и в [Photoshop](https://www.adobe.com/products/photoshop.html).
 
-Key technical notes:
+Основной целью было создать чистую, высокопроизводительную фронтенд-архитектуру без использования сторонних UI-фреймворков или CMS-бэкенда.
 
-* **Responsiveness**: Implemented purely with CSS media queries.
-* **Content**: All content is static (no [WordPress][WordPress-url] or similar CMS).
-* **Build Process**: [Sass/SCSS][Sass-url] and [TypeScript][TypeScript-url] source files are compiled into standard [CSS][CSS-url] and [JavaScript][JavaScript-url]. This approach keeps the source code organized and makes the project versatile as a starting template for other front-end solutions.
+Ключевые технические особенности:
 
-You can see a **preview of the website** in the image below:
+- **Адаптивность**: реализована исключительно с помощью медиа-запросов CSS.
+- **Контент**: весь контент статический (без [WordPress][WordPress-url] и аналогичных CMS).
+- **Процесс сборки**: исходные файлы [Sass/SCSS][Sass-url] и [TypeScript][TypeScript-url] компилируются в стандартные [CSS][CSS-url] и [JavaScript][JavaScript-url]. Такой подход позволяет поддерживать порядок в исходном коде и делает проект универсальной основой для других фронтенд-решений.
 
-[![Space Tourism Website Preview][website-preview]](https://aLeeTheY.github.io/Space-Tourism-Website/)
+Ниже можно посмотреть **превью сайта** (_нажмите на картинку, чтобы перейти к демо_):
 
+[![Превью сайта - Space Tourism Website][website-preview]](https://aLeeTheY.github.io/Space-Tourism-Website/)
 
+### Используемые технологии
 
-### Built With
+Сайт создан с использованием следующих технологий:
 
-This website is made using the following technologies:
+- [![HTML][HTML-logo]][HTML-url]
+- [![CSS][CSS-logo]][CSS-url]
+- [![JavaScript][JavaScript-logo]][JavaScript-url]
+- [![Sass][Sass-logo]][Sass-url]
+- [![TypeScript][TypeScript-logo]][TypeScript-url]
+- [![Node.js][Node.js-logo]][Node.js-url]
+- [![Git][Git-logo]][Git-url]
 
-* [![HTML][HTML-logo]][HTML-url]
-* [![CSS][CSS-logo]][CSS-url]
-* [![JavaScript][JavaScript-logo]][JavaScript-url]
-* [![Sass][Sass-logo]][Sass-url]
-* [![TypeScript][TypeScript-logo]][TypeScript-url]
-* [![Node.js][Node.js-logo]][Node.js-url]
-* [![Git][Git-logo]][Git-url]
+### Поддерживаемые браузеры
 
+Ниже приведён список браузеров, в которых сайт был протестирован и отображается корректно:
 
-
-### Supported Browsers
-
-Below is a list of browsers in which this website was tested and rendered correctly:
-
-* [![Opera GX][OperaGX-logo]][OperaGX-url]
-* [![Google Chrome][GoogleChrome-logo]][GoogleChrome-url]
-* [![Microsoft Edge][MicrosoftEdge-logo]][MicrosoftEdge-url]
-* [![Firefox][Firefox-logo]][Firefox-url]
-* [![Arc][Arc-logo]][Arc-url]
-* [![Brave][Brave-logo]][Brave-url]
-* [![Vivaldi][Vivaldi-logo]][Vivaldi-url]
+- [![Opera GX][OperaGX-logo]][OperaGX-url]
+- [![Google Chrome][GoogleChrome-logo]][GoogleChrome-url]
+- [![Microsoft Edge][MicrosoftEdge-logo]][MicrosoftEdge-url]
+- [![Firefox][Firefox-logo]][Firefox-url]
+- [![Arc][Arc-logo]][Arc-url]
+- [![Brave][Brave-logo]][Brave-url]
+- [![Vivaldi][Vivaldi-logo]][Vivaldi-url]
 
 <br />
 
 > [!IMPORTANT]
-> Browser compatibility was verified for the 1.0.0 release. The site displayed correctly in the latest versions of all major browsers at that time.
-> 
-> **Last verification date: 3 December 2025**
+> Совместимость с браузерами проверялась для версии сайта 1.0.0. Сайт корректно отображался в актуальных версиях [всех вышепредставленных браузеров](#поддерживаемые-браузеры) на тот момент.
+>
+> **Дата последней проверки: 3 декабря 2025**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
+<p align="right">(<a href="#readme-top">наверх</a>)</p>
 
 <!-- GETTING STARTED -->
-## Getting Started
 
-Please follow the steps below to build and view this website locally.
+## Начало работы
 
+_Пожалуйста, выполните шаги ниже, чтобы собрать и запустить сайт локально._
 
+### Предварительные требования
 
-### Prerequisites
+Сначала установите [Node.js][Node.js-url]. Затем скачайте этот репозиторий в виде ZIP-архива или клонируйте его с помощью [Git][Git-url] в нужную папку. Для клонирования используйте следующую команду:
 
-First, install [Node.js][Node.js-url]. Then, download this repository as a ZIP archive or clone it using [Git][Git-url] to a folder on your system. To clone it, you can use the following Git command:
+- git
 
-* git
+    ```sh
+    git clone https://github.com/aLeeTheY/Space-Tourism-Website
+    ```
 
-  ```sh
-  git clone https://github.com/aLeeTheY/Space-Tourism-Website
-  ```
+Перейдите в папку проекта в терминале и выполните следующую команду для установки всех необходимых зависимостей:
 
-Navigate to the project folder in your terminal and run the following command to install all project dependencies:
+- npm
 
-* npm
+    ```sh
+    npm install
+    ```
 
-  ```sh
-  npm install
-  ```
+### Компиляция статических файлов
 
-### Build Static Files
+_Пожалуйста, выполните следующие шаги для компиляции статических файлов сайта._
 
-_Please follow the steps below to build the static site files._
+Чтобы скомпилировать файлы Sass/SCSS в CSS, и TypeScript в JavaScript, выполните следующую команду (предупреждения компилятора можно игнорировать):
 
-To compile Sass/SCSS files into CSS and TypeScript files into JavaScript, run the following build command (you can ignore any warnings):
+- npm
 
-* npm
+    ```sh
+    npm run build:release
+    ```
 
-  ```sh
-  npm run build:release
-  ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
+<p align="right">(<a href="#readme-top">наверх</a>)</p>
 
 <!-- USAGE EXAMPLES -->
-## Usage
 
-After completing the steps in the [**Getting Started**](#getting-started) section, you can view the site manually by opening the **_index.html_** file from the **_public/_** folder in any [supported browser](#supported-browsers).
+## Использование
 
-Alternatively, to launch a local development server, use the following command:
+После выполнения шагов из раздела [**Начало работы**](#начало-работы) вы можете открыть сайт вручную, запустив файл **_index.html_** из папки **_public/_** в любом [поддерживаемом браузере](#поддерживаемые-браузеры).
 
-* npm
+Также, вы можете запустить сайт на локальном сервере следующей командой:
 
-  ```sh
-  npm run serve
-  ```
+- npm
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+    ```sh
+    npm run serve
+    ```
 
-
+<p align="right">(<a href="#readme-top">наверх</a>)</p>
 
 <!-- LICENSE -->
-## License
 
-Copyright © 2025 [Vladimir Nikulin](https://github.com/aLeeTheY).<br />
-This project is [MIT][license-url] licensed.
+## Лицензия
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Copyright © 2025 [Владимир Никулин](https://github.com/aLeeTheY).<br />
+Проект распространяется по лицензии [MIT][license-url].
 
-
+<p align="right">(<a href="#readme-top">наверх</a>)</p>
 
 <!-- CONTACT -->
-## Author
 
-👤 **Vladimir Nikulin**
+## Автор
 
-* Github: [@aLeeTheY](https://github.com/aLeeTheY)
-* Email: [mail.jorey@gmail.com](mailto:mail.jorey@gmail.com)
+👤 **Владимир Никулин**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- Github: [@aLeeTheY](https://github.com/aLeeTheY)
+- Email: [mail.jorey@gmail.com](mailto:mail.jorey@gmail.com)
 
-
+<p align="right">(<a href="#readme-top">наверх</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [HTML-logo]: https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white&style=for-the-badge
 [HTML-url]: https://html.spec.whatwg.org/
-
 [CSS-logo]: https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff&style=for-the-badge
 [CSS-url]: https://www.w3.org/TR/css/#css
-
 [JavaScript-logo]: https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=for-the-badge
 [JavaScript-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
-
 [Sass-logo]: https://img.shields.io/badge/Sass-C69?logo=sass&logoColor=fff&style=for-the-badge
 [Sass-url]: https://sass-lang.com/
-
 [TypeScript-logo]: https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=for-the-badge
 [TypeScript-url]: https://www.typescriptlang.org/
-
 [Node.js-logo]: https://img.shields.io/badge/Node.js-6DA55F?logo=node.js&logoColor=white&style=for-the-badge
 [Node.js-url]: https://nodejs.org/
-
 [Git-logo]: https://img.shields.io/badge/Git-F05032?logo=git&logoColor=fff&style=for-the-badge
 [Git-url]: https://git-scm.com/
-
-
-
 [contributors-shield]: https://img.shields.io/github/contributors/aLeeTheY/Space-Tourism-Website.svg?style=for-the-badge
 [contributors-url]: https://github.com/aLeeTheY/Space-Tourism-Website/graphs/contributors
-
 [forks-shield]: https://img.shields.io/github/forks/aLeeTheY/Space-Tourism-Website.svg?style=for-the-badge
 [forks-url]: https://github.com/aLeeTheY/Space-Tourism-Website/network/members
-
 [stars-shield]: https://img.shields.io/github/stars/aLeeTheY/Space-Tourism-Website.svg?style=for-the-badge
 [stars-url]: https://github.com/aLeeTheY/Space-Tourism-Website/stargazers
-
 [issues-shield]: https://img.shields.io/github/issues/aLeeTheY/Space-Tourism-Website.svg?style=for-the-badge
 [issues-url]: https://github.com/aLeeTheY/Space-Tourism-Website/issues
-
 [license-shield]: https://img.shields.io/github/license/aLeeTheY/Space-Tourism-Website.svg?style=for-the-badge
 [license-url]: https://github.com/aLeeTheY/Space-Tourism-Website/blob/main/LICENSE
-
-
-
-[website-preview]: public/assets/images/website_preview.png
-
-
-
+[website-preview]: public/assets/images/website_preview.gif
 [OperaGX-logo]: https://img.shields.io/badge/Opera%20GX-EE2950?logo=operagx&logoColor=fff&style=for-the-badge
 [OperaGX-url]: https://www.opera.com/gx/
-
 [GoogleChrome-logo]: https://img.shields.io/badge/Google%20Chrome-4285F4?logo=GoogleChrome&logoColor=white&style=for-the-badge
 [GoogleChrome-url]: https://www.google.com/chrome/
-
 [MicrosoftEdge-logo]: https://custom-icon-badges.demolab.com/badge/Microsoft%20Edge-2771D8?logo=edge-white&logoColor=white&style=for-the-badge
 [MicrosoftEdge-url]: https://www.microsoft.com/en-us/edge/
-
 [Firefox-logo]: https://img.shields.io/badge/Firefox-FF7139?logo=firefoxbrowser&logoColor=white&style=for-the-badge
 [Firefox-url]: https://www.firefox.com/
-
 [Arc-logo]: https://img.shields.io/badge/Arc-FCBFBD?logo=arc&logoColor=000&style=for-the-badge
 [Arc-url]: https://arc.net/
-
 [Brave-logo]: https://img.shields.io/badge/Brave-FB542B?logo=Brave&logoColor=white&style=for-the-badge
 [Brave-url]: https://brave.com/
-
 [Vivaldi-logo]: https://img.shields.io/badge/Vivaldi-EF3939?logo=Vivaldi&logoColor=white&style=for-the-badge
 [Vivaldi-url]: https://vivaldi.com/
-
-
-
 [WordPress-url]: https://wordpress.com/
-
-
-
