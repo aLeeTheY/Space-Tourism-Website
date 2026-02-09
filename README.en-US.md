@@ -88,7 +88,11 @@ Key technical notes:
 
 You can see a **preview of the website** in the image below (_click the image to view the live demo_):
 
+<div align="center">
+
 [![Space Tourism Website Preview][website-preview]](https://aLeeTheY.github.io/Space-Tourism-Website/)
+
+</div>
 
 ### Built With
 
@@ -115,7 +119,7 @@ Below is a list of browsers in which this website was tested and rendered correc
 <br />
 
 > [!IMPORTANT]
-> Browser compatibility was verified for version 1.0.2. As of the testing date, the site is fully functional in the latest versions of [all supported browsers](#supported-browsers).
+> Browser compatibility was verified for version 1.0.3. As of the testing date, the site is fully functional in the latest versions of [all supported browsers](#supported-browsers).
 >
 > **Last verification date: 10 February 2026**
 
