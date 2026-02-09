@@ -11,7 +11,9 @@
     line-height: 0; //? no text in this element
 
     // cursor: url("../../../public/assets/images/icons/pointer/pointer.svg") 3 0, auto;
-    cursor: url("/assets/images/icons/pointer/pointer.svg") 3 0, auto;
+    cursor:
+        url("../../assets/images/icons/pointer/pointer.svg") 3 0,
+        auto;
 
     &__img {
         min-width: fit-content;

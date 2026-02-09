@@ -25,7 +25,9 @@
     transition: color 0.3s ease-in-out;
 
     // cursor: url("../../../public/assets/images/icons/pointer/pointer.svg") 3 0, auto;
-    cursor: url("/assets/images/icons/pointer/pointer.svg") 3 0, auto;
+    cursor:
+        url("../../assets/images/icons/pointer/pointer.svg") 3 0,
+        auto;
 
     &::before {
         position: absolute;
@@ -51,7 +53,9 @@
         background-color: rgba($color: colors.$color__white, $alpha: 0);
 
         will-change: width, background-color, color;
-        transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        transition:
+            width 0.3s ease-in-out,
+            background-color 0.3s ease-in-out;
 
         z-index: 0;
     }
