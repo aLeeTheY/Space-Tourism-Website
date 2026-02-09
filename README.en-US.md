@@ -43,8 +43,8 @@
   </p>
   <br />
 
-  [![Русский](https://img.shields.io/badge/Русский-blue)](README.md)
-  [![English](https://img.shields.io/badge/English-blue)](README.en-US.md)
+[![Русский](https://img.shields.io/badge/Русский-blue)](README.md)
+[![English](https://img.shields.io/badge/English-blue)](README.en-US.md)
 
 </div>
 
@@ -107,7 +107,7 @@ This website is made using the following technologies:
 - [![Node.js][Node.js-logo]][Node.js-url]
 - [![Git][Git-logo]][Git-url]
 
-### Supported Browsershttps://nodejs.org/
+### Supported Browsers
 
 Below is a list of browsers in which this website was tested and rendered correctly:
 
@@ -120,7 +120,7 @@ Below is a list of browsers in which this website was tested and rendered correc
 <br />
 
 > [!IMPORTANT]
-> Browser compatibility was verified for version **1.0.4**. As of the testing date, the site is fully functional in the latest versions of [all supported browsers](#supported-browsers).
+> Browser compatibility was verified for version **1.0.5**. As of the testing date, the site is fully functional in the latest versions of [all supported browsers](#supported-browsers).
 >
 > **Last verification date: 10 February 2026**
 
