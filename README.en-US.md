@@ -41,9 +41,10 @@
     &middot;
     <a href="https://github.com/aLeeTheY/Space-Tourism-Website/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
   </p>
+  <br />
 
-[![Русский](https://img.shields.io/badge/Русский-blue)](README.md)
-[![English](https://img.shields.io/badge/English-blue)](README.en-US.md)
+  [![Русский](https://img.shields.io/badge/Русский-blue)](README.md)
+  [![English](https://img.shields.io/badge/English-blue)](README.en-US.md)
 
 </div>
 
