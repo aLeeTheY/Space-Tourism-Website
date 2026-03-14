@@ -167,13 +167,13 @@ Main directories and files:
 Space-Tourism-Website/
 │
 ├── .vscode/
-│   └── tasks.json           # extension file for 'spencerwmiles.vscode-task-buttons'
+│   └── tasks.json            # extension file for 'spencerwmiles.vscode-task-buttons'
 │
-├── project/                 # miscellaneous project files
+├── project/                  # miscellaneous project files
 │   └── preview/
 │
-├── public/                  # compiled project files and assets
-│   ├── assets/              # images and static resources
+├── public/                   # compiled project files and assets
+│   ├── assets/               # images and static resources
 │   ├── css/
 │   ├── js/
 │   ├── crew.html
@@ -183,16 +183,16 @@ Space-Tourism-Website/
 │   └── technology.html
 │
 ├── src/
-│   ├── scss/                # source Sass files
-│   └── ts/                  # source TypeScript files
+│   ├── scss/                 # source Sass files
+│   └── ts/                   # source TypeScript files
 │
 ├── .gitignore
 ├── LICENSE
 ├── package-lock.json
-├── package.json             # project configuration and dependencies
+├── package.json              # project configuration and dependencies
 ├── README.ENG.md
 ├── README.md
-└── tsconfig.json            # TypeScript configuration
+└── tsconfig.json             # TypeScript configuration
 ```
 
 ### Supported Browsers

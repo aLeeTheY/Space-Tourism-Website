@@ -167,13 +167,13 @@
 Space-Tourism-Website/
 │
 ├── .vscode/
-│   └── tasks.json           # файл расширения 'spencerwmiles.vscode-task-buttons'
+│   └── tasks.json            # файл расширения 'spencerwmiles.vscode-task-buttons'
 │
-├── project/                 # прочие проектные файлы
+├── project/                  # прочие проектные файлы
 │   └── preview/
 │
-├── public/                  # скомпилированные файлы проекта и ассеты
-│   ├── assets/              # изображения и статические ресурсы
+├── public/                   # скомпилированные файлы проекта и ассеты
+│   ├── assets/               # изображения и статические ресурсы
 │   ├── css/
 │   ├── js/
 │   ├── crew.html
@@ -183,16 +183,16 @@ Space-Tourism-Website/
 │   └── technology.html
 │
 ├── src/
-│   ├── scss/                # исходные Sass-файлы
-│   └── ts/                  # исходные TypeScript-файлы
+│   ├── scss/                 # исходные Sass-файлы
+│   └── ts/                   # исходные TypeScript-файлы
 │
 ├── .gitignore
 ├── LICENSE
 ├── package-lock.json
-├── package.json             # конфигурация проекта и зависимости
+├── package.json              # конфигурация проекта и зависимости
 ├── README.ENG.md
 ├── README.md
-└── tsconfig.json            # конфигурация TypeScript
+└── tsconfig.json             # конфигурация TypeScript
 ```
 
 ### Поддерживаемые браузеры
