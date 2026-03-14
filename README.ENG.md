@@ -167,7 +167,7 @@ Main directories and files:
 Space-Tourism-Website/
 │
 ├── .vscode/
-│   └── tasks.json            # extension file for 'spencerwmiles.vscode-task-buttons'
+│   └── tasks.json            # extension file for `spencerwmiles.vscode-task-buttons`
 │
 ├── project/                  # miscellaneous project files
 │   └── preview/
@@ -176,6 +176,7 @@ Space-Tourism-Website/
 │   ├── assets/               # images and static resources
 │   ├── css/
 │   ├── js/
+│   │
 │   ├── crew.html
 │   ├── destination.html
 │   ├── favicon.ico
@@ -407,4 +408,4 @@ Without these tools, the development of this project would have been **impossibl
 [Firefox-url]: https://www.firefox.com/
 [Yandex-logo]: https://custom-icon-badges.demolab.com/badge/Yandex%20Browser-F03911?logo=yandex-browser&style=for-the-badge
 [Yandex-url]: https://browser.yandex.com/
-[website-preview]: project/preview/combined.gif
+[website-preview]: project/preview/preview.gif

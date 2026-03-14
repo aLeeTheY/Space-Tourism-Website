@@ -167,7 +167,7 @@
 Space-Tourism-Website/
 │
 ├── .vscode/
-│   └── tasks.json            # файл расширения 'spencerwmiles.vscode-task-buttons'
+│   └── tasks.json            # файл расширения `spencerwmiles.vscode-task-buttons`
 │
 ├── project/                  # прочие проектные файлы
 │   └── preview/
@@ -176,6 +176,7 @@ Space-Tourism-Website/
 │   ├── assets/               # изображения и статические ресурсы
 │   ├── css/
 │   ├── js/
+│   │
 │   ├── crew.html
 │   ├── destination.html
 │   ├── favicon.ico
@@ -192,7 +193,7 @@ Space-Tourism-Website/
 ├── package.json              # конфигурация проекта и зависимости
 ├── README.ENG.md
 ├── README.md
-└── tsconfig.json             # конфигурация TypeScript
+└── tsconfig.json             # настройки TypeScript
 ```
 
 ### Поддерживаемые браузеры
@@ -407,4 +408,4 @@ Email: [aleethey@gmail.com](mailto:aleethey@gmail.com)
 [Firefox-url]: https://www.firefox.com/
 [Yandex-logo]: https://custom-icon-badges.demolab.com/badge/Yandex%20Browser-F03911?logo=yandex-browser&style=for-the-badge
 [Yandex-url]: https://browser.yandex.com/
-[website-preview]: project/preview/combined.gif
+[website-preview]: project/preview/preview.gif
