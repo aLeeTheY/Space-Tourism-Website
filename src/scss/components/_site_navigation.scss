@@ -108,6 +108,18 @@
     }
 }
 
+//? --- TABLET + MOBILE ---
+//? -----------------------
+@media (max-width: 1439px) {
+    .site-navigation {
+        &__link {
+            &::after {
+                transition: background-color 0.1s ease-out;
+            }
+        }
+    }
+}
+
 //? --- TABLET ---
 //? --------------
 @media (min-width: 768px) and (max-width: 1439px) {
@@ -117,12 +129,6 @@
         &__list {
             column-gap: 40px;
         }
-
-        // &__link {
-        //     &::before {
-        //         display: none;
-        //     }
-        // }
     }
 }
 
@@ -147,7 +153,7 @@
         z-index: 2;
 
         will-change: right;
-        transition: right 0.2s ease-in-out;
+        transition: right 0.2s ease-out;
 
         &__list {
             flex-direction: column;

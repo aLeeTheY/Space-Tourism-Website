@@ -8,7 +8,7 @@ if (isTouchDevice) {
         const href = link.getAttribute("href") ?? "#";
 
         // delay in ms
-        const delay = 300;
+        const delay = 100;
 
         // add new clicked class
         link.classList.add("is-clicked");

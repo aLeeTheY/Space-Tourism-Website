@@ -63,7 +63,7 @@
         z-index: 0;
     }
 
-    @media (hover: none) {
+    @media (hover: hover) {
         &:hover {
             @include typography.tp-4--dark-blue--half-opacity;
 
@@ -74,7 +74,7 @@
         }
     }
 
-    @media (hover: hover) {
+    @media (hover: none) {
         &:active {
             @include typography.tp-4--dark-blue--half-opacity;
 
@@ -82,6 +82,20 @@
                 width: calc(272px + 88px * 2);
                 background-color: rgba($color: colors.$color__white, $alpha: 10%);
             }
+        }
+    }
+}
+
+//? --- TABLET + MOBILE ---
+//? -----------------------
+@media (max-width: 1439px) {
+    .explore-btn {
+        transition: color 0.1s ease-out;
+
+        &::before {
+            transition:
+                width 0.1s ease-out,
+                background-color 0.1s ease-out;
         }
     }
 }
@@ -96,7 +110,7 @@
             width: 144px;
         }
 
-        @media (hover: none) {
+        @media (hover: hover) {
             &:hover {
                 &::before {
                     width: calc(144px + 88px * 2);
@@ -104,7 +118,7 @@
             }
         }
 
-        @media (hover: hover) {
+        @media (hover: none) {
             &:active {
                 &::before {
                     width: calc(144px + 88px * 2);
