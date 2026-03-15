@@ -33,3 +33,10 @@ js/
 # Ignore all build folders
 dist/
 build/
+
+# Ignore all old/ folders
+old/
+
+# Ignore project/ and public/ folders for gh-pages branch
+project/
+public/
