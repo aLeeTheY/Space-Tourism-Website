@@ -99,16 +99,13 @@
 
 ## About the Project
 
-The primary goal of this project is to build a multi-page responsive website to practice skills with **Sass** and **TypeScript**.
+The primary goal of this project is to develop a multi-page responsive application to practice architectural patterns using **Sass** and **TypeScript**.
 
-The project is implemented without frameworks or CMS, focusing on a clean and understandable architecture.  
-**Sass** is used to organize and scale the styles, while **TypeScript** handles the client-side logic for tab switching.
+The project is implemented without external UI frameworks or CMS, focusing on a clean and scalable codebase. **Sass** is utilized for modular style organization, while **TypeScript** provides type-safe client-side logic for interface state management (tabs, pagination).
 
 ### Design
 
-The site design is based on the [**Space Tourism**](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3) layout, created in [**Figma**](https://www.figma.com/) and provided by the [**Frontend Mentor**](https://www.frontendmentor.io/) platform.
-
-The main task was to reproduce the proposed interface with maximum accuracy and adapt it to different screen resolutions.
+The UI is based on the [**Space Tourism**](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3) design provided by [**Frontend Mentor**](https://www.frontendmentor.io/). The main objective was a high-fidelity (Pixel Perfect) implementation of the interface and its adaptation across various display resolutions while maintaining design system integrity.
 
 ### Preview
 
@@ -120,20 +117,20 @@ Below you can see a **website preview** (_**Desktop + Mobile**, click the image 
 
 </div>
 
-### Key Features
+### Ключевые особенности
 
-- **Responsive Design**: Fully adapted for Desktop, Tablet, and Mobile using CSS media queries.
-- **Pixel Perfect**: Layout matches the design mockup as closely as possible.
-- **UX/UI**: Smooth animations enhance the visual experience.
-- **BEM Methodology**: CSS class naming follows the Block-Element-Modifier methodology.
-- **Build Process**: Modern tools simplify development and extend the capabilities of standard CSS and JavaScript.
-- **Static Content**: No CMS or server-side page generation is used.
-- **Lightweight**: Scores **100/100 in [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) Performance** and **90+ in other metrics**.
-- **Template Versatility**: The project can serve as a template for other static websites.
+- **Responsive Design**: Comprehensive interface adaptation for Desktop, Tablet, and Mobile viewports via CSS media queries.
+- **Pixel Perfect Fidelity**: High-precision implementation ensuring 1:1 design-to-code consistency across all layouts.
+- **Enhanced UI/UX**: Implementation of smooth transitions and micro-interactions to optimize user engagement.
+- **BEM Methodology**: Utilization of `Block-Element-Modifier` naming convention for style isolation and maintainability.
+- **Modern Build Workflow**: Deployment of modern tooling to extend standard CSS/JS capabilities and streamline development.
+- **Static Architecture**: Engineered as a client-side static application without reliance on CMS or Server-Side Rendering (SSR).
+- **Performance Optimization**: Achieved a **100/100 [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) Performance score** and **90+ across all other benchmarks**.
+- **Template Versatility**: Clean, modular project structure designed for easy adaptation as a boilerplate for future static sites.
 
 #### Google Lighthouse Benchmark
 
-To verify the Lighthouse scores, here are the results (**Desktop + Mobile**):
+To verify the performance excellence in the **Google Lighthouse** benchmark, the testing results are presented below (**Desktop + Mobile**):
 
 <div align="center">
 
@@ -170,7 +167,10 @@ Space-Tourism-Website/
 │   └── tasks.json            # extension file for `spencerwmiles.vscode-task-buttons`
 │
 ├── project/                  # miscellaneous project files
-│   └── preview/
+│   ├── preview/
+│   │
+│   ├── lighthouse_benchmark__desktop.png
+│   └── lighthouse_benchmark__mobile.png
 │
 ├── public/                   # compiled project files and assets
 │   ├── assets/               # images and static resources
@@ -207,9 +207,9 @@ The project has been tested for correct rendering and script stability in the la
 - [![Opera][Opera-logo]][Opera-url]
 
 > [!IMPORTANT]
-> This information applies to version **[1.0.5](https://github.com/aLeeTheY/Space-Tourism-Website/releases/tag/1.0.5)**. At the time of verification, the project was rendered correctly in the latest stable versions of all [supported browsers](#supported-browsers).
+> This information applies to version **[1.1.0](https://github.com/aLeeTheY/Space-Tourism-Website/releases/tag/1.1.0)**. At the time of verification, the project was rendered correctly in the latest stable versions of all [supported browsers](#supported-browsers).
 >
-> **Last verification date: February 10, 2026**
+> **Last verification date: March 16, 2026**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -290,21 +290,23 @@ The project uses the following `npm` commands:
 
 ## Development Challenges
 
-- **Element Positioning**: The design mockup did not always make it obvious which hierarchy to use when building the DOM structure.
-- **Typography**: Typography classes needed to be separated from other styles to avoid code duplication.
-- **Multi-file Sass**: A well-organized structure of Sass files was required to separate component and page styles.
-- **Responsiveness**: Developing the responsive version required considering a large number of elements whose styles change depending on the device. Some differences amounted to only 1–2 CSS properties, making it harder to identify and fix discrepancies.
+- **DOM Structure Engineering**: Resolved ambiguities in the design layout to build a logical and semantically correct document object model.
+- **Typography Architecture**: Implemented a system of Sass mixins to manage fonts. This allowed for encapsulating text properties (font-size, line-height, weight) and reusing them across component styles, eliminating code redundancy and simplifying scaling.
+- **Sass Modularization**: Established a multi-file architecture to strictly isolate global assets, components, and page-specific styles.
+- **Responsive Complexity**: Managed granular style changes across various breakpoints, ensuring layout precision where differences were limited to single CSS properties.
+- **Tap Highlight Suppression**: Disabled native mobile browser overlays on link-based buttons (`<a>`) to achieve clean, custom interaction feedback.
+- **Sticky Hover Mitigation**: Resolved an issue where buttons retained their hover state during back navigation on touch devices by implementing `@media (hover: hover)` logic.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Key Skills
 
-- **UI/UX Design**: Working with ready-made design mockups and translating them into HTML/CSS.
-- **BEM Methodology**: Creating a clear and scalable CSS class structure using BEM methodology.
-- **TypeScript**: Implementing client-side logic for tab switching.
-- **Responsive Layout**: Developing a multi-page responsive interface.
-- **Documentation & GitHub**: Writing documentation and README.md files using Markdown, version control with Git.
-- **Dependency Management & Build**: Using `npm` for dependency management and project builds.
+- **UI/UX Implementation**: Precision-driven conversion of complex design layouts into semantic HTML with a focus on pixel-perfect accuracy.
+- **BEM Methodology**: Architecting scalable and maintainable CSS structures using BEM to prevent specificity conflicts.
+- **Client-side Logic (TypeScript)**: Developed type-safe logic for interactive UI components (tabs, pagination) using TypeScript to ensure code stability and maintainability.
+- **Responsive Web Design**: Engineering robust adaptive interfaces for multi-page applications with a mobile-first approach.
+- **Performance Optimization**: Improved rendering speed (LCP) by implementing `.webp` imagery, balanced asset compression with minimal quality loss, and non-blocking script execution (`async/defer`).
+- **Workflow & CI/CD**: Professional Git version control, dependency management via `npm`, and comprehensive project documentation.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -312,15 +314,16 @@ The project uses the following `npm` commands:
 
 ## Roadmap
 
-- [x] Develop HTML documents and CSS styling for pages:
+- [x] Development of HTML documents and page styling:
   - [x] `index.html`
   - [x] `destination.html`
   - [x] `crew.html`
   - [x] `technology.html`
-- [x] Implement responsiveness for **Tablet**
-- [x] Implement responsiveness for **Mobile**
-- [x] Verify that the result matches the design mockup
-- [x] Prepare documentation for GitHub
+- [x] Implementation of interactive tab and pagination logic using TypeScript
+- [x] Responsive adaptation for **Tablet** viewports
+- [x] Responsive adaptation for **Mobile** viewports
+- [x] Design fidelity verification and **QA**
+- [x] Preparation of technical documentation and `README.md`
 
 The full list of planned features and known issues is available in the [Issues][issues-url] section.
 
