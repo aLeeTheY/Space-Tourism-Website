@@ -5,12 +5,12 @@ node_modules/
 #.vscode/
 
 # Ignore all CSS files and folders
-css/
+# css/
 
-*.min.css
+# *.min.css
 *.min.css.map
 
-*.css
+# *.css
 *.css.map
 
 # Ignore some TypeScript files
@@ -21,9 +21,9 @@ css/
 *.tsbuildinfo
 
 # Ignore all JS files and folders
-js/
+# js/
 
-*.js
+# *.js
 *.js.map
 
 # Ingore some fonts files
