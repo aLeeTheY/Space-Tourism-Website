@@ -38,7 +38,7 @@
   <h1 align="center">Space Tourism Website</h1>
 
   <p align="center">
-    🚀 Верстка многостраничного адаптивного сайта для вымышленной компании, предоставляющей услуги космического туризма.
+    🚀 Многостраничное адаптивное приложение Space Tourism. Стек — Sass & TypeScript. Pixel Perfect реализация и 100/100 Lighthouse Performance.
     <br />
     <br />
     <a href="https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3">Дизайн (макет)</a>

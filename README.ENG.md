@@ -38,7 +38,7 @@
   <h1 align="center">Space Tourism Website</h1>
 
   <p align="center">
-    🚀 A multi-page responsive website layout for a fictional space tourism company.
+    🚀 Responsive Space Tourism multipage site. Built with Sass & TypeScript. Pixel Perfect & 100/100 Lighthouse Performance.
     <br />
     <br />
     <a href="https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3">Design (Layout)</a>
