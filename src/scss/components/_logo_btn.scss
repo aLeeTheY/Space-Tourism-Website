@@ -10,6 +10,9 @@
 
     line-height: 0; //? no text in this element
 
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+
     // cursor: url("../../../public/assets/images/icons/pointer/pointer.svg") 3 0, auto;
     cursor:
         url("../../assets/images/icons/pointer/pointer.svg") 3 0,
