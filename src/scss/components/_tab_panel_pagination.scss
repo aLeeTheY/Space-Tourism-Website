@@ -30,8 +30,13 @@
             url("../../assets/images/icons/pointer/pointer.svg") 3 0,
             auto;
 
-        &:hover {
-            opacity: 50%;
+        // @media (hover: none) {
+        // }
+
+        @media (hover: hover) {
+            &:hover {
+                opacity: 50%;
+            }
         }
 
         &:active {
@@ -85,8 +90,13 @@
                 url("../../assets/images/icons/pointer/pointer.svg") 3 0,
                 auto;
 
-            &:hover {
-                border-color: colors.$color__white;
+            // @media (hover: none) {
+            // }
+
+            @media (hover: hover) {
+                &:hover {
+                    border-color: colors.$color__white;
+                }
             }
 
             &:active {

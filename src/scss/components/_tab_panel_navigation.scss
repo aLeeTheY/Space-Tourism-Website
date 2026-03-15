@@ -46,9 +46,14 @@
             transition: background-color 0.3s ease-in-out;
         }
 
-        &:hover {
-            &::after {
-                background-color: rgba($color: colors.$color__white, $alpha: 0.5);
+        // @media (hover: none) {
+        // }
+
+        @media (hover: hover) {
+            &:hover {
+                &::after {
+                    background-color: rgba($color: colors.$color__white, $alpha: 0.5);
+                }
             }
         }
 
