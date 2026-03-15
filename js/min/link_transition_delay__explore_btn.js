@@ -1,0 +1,1 @@
+"use strict";(()=>{var i=window.matchMedia("(pointer: coarse)").matches;i&&document.querySelector(".explore-btn")?.addEventListener("click",function(t){t.preventDefault();let e=this,n=e.getAttribute("href")??"#",c=300;e.classList.add("is-clicked"),setTimeout(function(){window.location.href=n},c)});})();
