@@ -7,7 +7,7 @@
       e.preventDefault();
       const link = this;
       const href = link.getAttribute("href") ?? "#";
-      const delay = 300;
+      const delay = 100;
       link.classList.add("is-clicked");
       setTimeout(function() {
         window.location.href = href;

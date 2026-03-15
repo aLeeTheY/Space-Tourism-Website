@@ -313,6 +313,11 @@ html {
   display: none;
 }
 
+@media (max-width: 1439px) {
+  .site-navigation__link::after {
+    transition: background-color 0.1s ease-out;
+  }
+}
 @media (min-width: 768px) and (max-width: 1439px) {
   .site-navigation {
     padding: 0 40px 0 117px;
@@ -335,7 +340,7 @@ html {
     row-gap: 48px;
     z-index: 2;
     will-change: right;
-    transition: right 0.2s ease-in-out;
+    transition: right 0.2s ease-out;
   }
   .site-navigation__list {
     flex-direction: column;
@@ -452,6 +457,14 @@ html {
   background-color: #fff;
 }
 
+@media (max-width: 1439px) {
+  .tab-panel-navigation__button {
+    transition: color 0.1s ease-out;
+  }
+  .tab-panel-navigation__button::after {
+    transition: background-color 0.1s ease-out;
+  }
+}
 .tab-panel-pagination__list {
   display: inline-flex;
   -moz-column-gap: 40px;
@@ -534,6 +547,14 @@ html {
   color: #0b0d17;
 }
 
+@media (max-width: 1439px) {
+  .tab-panel-pagination__button {
+    transition: opacity 0.1s ease-out;
+  }
+  .tab-panel-pagination--technology .tab-panel-pagination__button {
+    transition: color 0.1s ease-out, border-color 0.1s ease-out, background-color 0.1s ease-out;
+  }
+}
 @media (min-width: 768px) and (max-width: 1439px) {
   .tab-panel-pagination__list {
     -moz-column-gap: 16px;
@@ -665,37 +686,8 @@ html {
   transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
   z-index: 0;
 }
-@media (hover: none) {
-  .explore-btn:hover {
-    font-family: "Bellefair", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 32px;
-    line-height: normal;
-    letter-spacing: 0;
-    color: #fff;
-    text-transform: uppercase;
-    color: rgba(11, 13, 23, 0.5) !important;
-  }
-}
-@media (hover: none) and (min-width: 768px) and (max-width: 1439px) {
-  .explore-btn:hover {
-    font-size: 24px;
-  }
-}
-@media (hover: none) and (max-width: 767px) {
-  .explore-btn:hover {
-    font-size: 18px;
-  }
-}
-@media (hover: none) {
-  .explore-btn:hover::before {
-    width: 448px;
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-}
 @media (hover: hover) {
-  .explore-btn:active {
+  .explore-btn:hover {
     font-family: "Bellefair", serif;
     font-weight: 400;
     font-style: normal;
@@ -708,22 +700,59 @@ html {
   }
 }
 @media (hover: hover) and (min-width: 768px) and (max-width: 1439px) {
-  .explore-btn:active {
+  .explore-btn:hover {
     font-size: 24px;
   }
 }
 @media (hover: hover) and (max-width: 767px) {
-  .explore-btn:active {
+  .explore-btn:hover {
     font-size: 18px;
   }
 }
 @media (hover: hover) {
+  .explore-btn:hover::before {
+    width: 448px;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+@media (hover: none) {
+  .explore-btn:active {
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    line-height: normal;
+    letter-spacing: 0;
+    color: #fff;
+    text-transform: uppercase;
+    color: rgba(11, 13, 23, 0.5) !important;
+  }
+}
+@media (hover: none) and (min-width: 768px) and (max-width: 1439px) {
+  .explore-btn:active {
+    font-size: 24px;
+  }
+}
+@media (hover: none) and (max-width: 767px) {
+  .explore-btn:active {
+    font-size: 18px;
+  }
+}
+@media (hover: none) {
   .explore-btn:active::before {
     width: 448px;
     background-color: rgba(255, 255, 255, 0.1);
   }
 }
 
+@media (max-width: 1439px) {
+  .explore-btn {
+    transition: color 0.1s ease-out;
+  }
+  .explore-btn::before {
+    transition: width 0.1s ease-out, background-color 0.1s ease-out;
+  }
+}
 @media (max-width: 767px) {
   .explore-btn {
     width: 144px;
@@ -732,12 +761,12 @@ html {
     width: 144px;
   }
 }
-@media (max-width: 767px) and (hover: none) {
+@media (max-width: 767px) and (hover: hover) {
   .explore-btn:hover::before {
     width: 320px;
   }
 }
-@media (max-width: 767px) and (hover: hover) {
+@media (max-width: 767px) and (hover: none) {
   .explore-btn:active::before {
     width: 320px;
   }
