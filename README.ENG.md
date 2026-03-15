@@ -117,7 +117,7 @@ Below you can see a **website preview** (_**Desktop + Mobile**, click the image 
 
 </div>
 
-### Ключевые особенности
+### Key Features
 
 - **Responsive Design**: Comprehensive interface adaptation for Desktop, Tablet, and Mobile viewports via CSS media queries.
 - **Pixel Perfect Fidelity**: High-precision implementation ensuring 1:1 design-to-code consistency across all layouts.
