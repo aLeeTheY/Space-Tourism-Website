@@ -6,7 +6,7 @@ export const update_active_tab = (
         button: HTMLElement;
         picture: HTMLElement | null;
         tab: HTMLElement | null;
-    }
+    },
 ) => {
     // Снимаем активность с предыдущей кнопки
     current_active.button.classList.remove("active");
