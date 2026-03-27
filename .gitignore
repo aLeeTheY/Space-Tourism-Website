@@ -8,10 +8,10 @@ node_modules/
 # css/
 
 # *.min.css
-*.min.css.map
+# *.min.css.map
 
 # *.css
-*.css.map
+# *.css.map
 
 # Ignore some TypeScript files
 *.d.ts
