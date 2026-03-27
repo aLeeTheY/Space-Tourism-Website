@@ -1,1 +1,2 @@
-"use strict";(()=>{var i=window.matchMedia("(pointer: coarse)").matches;i&&document.querySelector(".explore-btn")?.addEventListener("click",function(t){t.preventDefault();let e=this,n=e.getAttribute("href")??"#",c=100;e.classList.add("is-clicked"),setTimeout(function(){window.location.href=n},c)});})();
+"use strict";(()=>{var s=window.matchMedia("(pointer: coarse)").matches,n;s&&((n=document.querySelector(".explore-btn"))==null||n.addEventListener("click",function(c){var t;c.preventDefault();let e=this,i=(t=e.getAttribute("href"))!=null?t:"#",o=100;e.classList.add("is-clicked"),setTimeout(function(){window.location.href=i},o)}));})();
+//# sourceMappingURL=link_transition_delay__explore_btn.js.map

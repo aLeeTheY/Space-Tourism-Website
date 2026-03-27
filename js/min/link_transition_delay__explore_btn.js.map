@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/ts/link_transition_delay__explore_btn.ts"],
+  "sourcesContent": ["const isTouchDevice = window.matchMedia(\"(pointer: coarse)\").matches;\r\n\r\nif (isTouchDevice) {\r\n    document.querySelector(\".explore-btn\")?.addEventListener(\"click\", function (this: HTMLAnchorElement, e: Event) {\r\n        e.preventDefault(); // disable default behavior\r\n\r\n        const link = this;\r\n        const href = link.getAttribute(\"href\") ?? \"#\";\r\n\r\n        // delay in ms\r\n        const delay = 100;\r\n\r\n        // add new clicked class\r\n        link.classList.add(\"is-clicked\");\r\n\r\n        // go to other page after animation\r\n        setTimeout(function () {\r\n            window.location.href = href;\r\n        }, delay);\r\n    });\r\n}\r\n"],
+  "mappings": "mBAAA,IAAMA,EAAgB,OAAO,WAAW,mBAAmB,EAAE,QAA7DC,EAEID,KACAC,EAAA,SAAS,cAAc,cAAc,IAArC,MAAAA,EAAwC,iBAAiB,QAAS,SAAmCC,EAAU,CAHnH,IAAAD,EAIQC,EAAE,eAAe,EAEjB,IAAMC,EAAO,KACPC,GAAOH,EAAAE,EAAK,aAAa,MAAM,IAAxB,KAAAF,EAA6B,IAGpCI,EAAQ,IAGdF,EAAK,UAAU,IAAI,YAAY,EAG/B,WAAW,UAAY,CACnB,OAAO,SAAS,KAAOC,CAC3B,EAAGC,CAAK,CACZ",
+  "names": ["isTouchDevice", "_a", "e", "link", "href", "delay"]
+}
