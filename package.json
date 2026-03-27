@@ -1,26 +1,31 @@
 {
-    "name": "basic-website-template",
-    "version": "1.0.0",
-    "description": "Одностраничный сайт, сверстанный по макету из Figma. Реализована статическая кроссбраузерная верстка.",
+    "name": "space-tourism-website",
+    "version": "1.1.0",
+    "description": "🚀 Responsive Space Tourism multipage site. Built with Sass & TypeScript. Pixel Perfect & 100/100 Lighthouse Performance.",
     "private": true,
-    "homepage": "https://github.com/npm/example#readme",
+    "homepage": "https://github.com/aLeeTheY/Space-Tourism-Website#readme",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/npm/example.git"
+        "url": "git+https://github.com/aLeeTheY/Space-Tourism-Website.git"
+    },
+    "bugs": {
+        "url": "https://github.com/aLeeTheY/Space-Tourism-Website/issues"
     },
     "author": {
         "name": "Vladimir Nikulin",
-        "email": "mail.jorey@gmail.com",
-        "url": "https://github.com/aBLeeWeeAN"
+        "email": "aleethey@gmail.com",
+        "url": "https://github.com/aLeeTheY"
     },
-    "license": "ISC",
+    "license": "MIT",
     "type": "module",
     "devDependencies": {
-        "autoprefixer": "^10.4.27",
         "chokidar-cli": "^3.0.0",
         "cross-env": "^10.1.0",
+        "cssnano": "^7.1.3",
+        "cssnano-preset-advanced": "^7.0.11",
         "npm-run-all": "^4.1.5",
         "postcss-cli": "^11.0.1",
+        "postcss-preset-env": "^11.2.0",
         "rimraf": "^6.1.3",
         "sass": "^1.98.0",
         "typescript": "^6.0.2"
@@ -28,8 +33,8 @@
     "scripts": {
         "clean": "rimraf public/css public/js",
         "__SCSS__": "",
-        "build:scss": "sass src/scss:public/css --no-source-map && postcss public/css/*.css --use autoprefixer --env development -d public/css",
-        "build:scss:min": "sass src/scss:public/css/min --style=compressed --source-map && postcss public/css/min/*.css --use autoprefixer --env production --dir public/css/min --map",
+        "build:scss": "sass src/scss:public/css --no-source-map && postcss public/css/*.css --env development -d public/css",
+        "build:scss:min": "sass src/scss:public/css/min --style=compressed --source-map && postcss public/css/min/*.css --env production --dir public/css/min --map",
         "__TYPESCRIPT__": "",
         "build:ts": "esbuild src/ts/*.ts --bundle --target=es2015 --outdir=public/js",
         "build:ts:min": "esbuild src/ts/*.ts --bundle --minify --sourcemap --target=es2015 --outdir=public/js/min",
