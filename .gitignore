@@ -24,7 +24,10 @@ node_modules/
 # js/
 
 # *.js
-*.js.map
+# *.js.map
+
+# Allow all configuration files on JS
+!*.config.js
 
 # Ingore some fonts files
 *.otf
@@ -40,3 +43,6 @@ old/
 # Ignore project/ and public/ folders for gh-pages branch
 project/
 public/
+
+# Ignore all .txt files
+*.txt
