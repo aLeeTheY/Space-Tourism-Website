@@ -13,6 +13,9 @@ node_modules/
 # *.css
 # *.css.map
 
+# Ignore all *.map files
+*.map
+
 # Ignore some TypeScript files
 *.d.ts
 *.d.ts.map
@@ -43,6 +46,10 @@ old/
 # Ignore project/ and public/ folders for gh-pages branch
 project/
 public/
+src/
 
-# Ignore all .txt files
+**/original
+
+# Ignore all .txt files, but allow robots.txt
 *.txt
+!**/robots.txt
