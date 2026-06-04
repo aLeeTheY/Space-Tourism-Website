@@ -5,60 +5,57 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!-- * FAVICON --->
-        <link rel="icon" type="image/png" href="/Space-Tourism-Website/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/svg+xml" href="/Space-Tourism-Website/favicon.svg" />
-        <link rel="shortcut icon" href="/Space-Tourism-Website/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/Space-Tourism-Website/apple-touch-icon.png" />
-        <link rel="manifest" href="/Space-Tourism-Website/site.webmanifest" />
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
 
-        <!-- * TITLE --->
+        <!-- * TITLE & DESCRIPTION --->
         <title>Space Tourism Website - Destination</title>
+        <meta
+            name="description"
+            content="Meet the exceptional crew of your space mission: Commander Douglas Hurley, Mission Specialist Mark Shuttleworth, Pilot Victor Glover, and Flight Engineer Anousheh Ansari." />
 
-        <link rel="stylesheet" href="/Space-Tourism-Website/css/min/main.css" />
+        <link rel="stylesheet" href="./css/min/main.css" />
 
         <!--* BLOCK APPLE DETECTORS --->
         <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
     </head>
     <body class="body body--crew">
         <header class="header">
-            <a href="/Space-Tourism-Website/index.html" class="logo-btn">
-                <img class="logo-btn__img" src="/Space-Tourism-Website/assets/images/icons/logo.svg" alt="Logo icon" />
+            <a href="./index.html" class="logo-btn">
+                <img class="logo-btn__img" src="./assets/images/icons/logo.svg" alt="Logo icon" />
             </a>
             <nav class="site-navigation" id="site-navigation">
                 <div class="site-navigation__close-menu-btn">
                     <a href="#" class="close-menu-btn">
-                        <img
-                            class="close-menu-btn__img"
-                            src="/Space-Tourism-Website/assets/images/icons/menu_close.svg"
-                            alt="Menu close button" />
+                        <img class="close-menu-btn__img" src="./assets/images/icons/menu_close.svg" alt="Menu close button" />
                     </a>
                 </div>
                 <ol class="site-navigation__list">
-                    <li class="site-navigation__item">
-                        <a href="/Space-Tourism-Website/index.html" class="site-navigation__link">Home</a>
-                    </li>
-                    <li class="site-navigation__item">
-                        <a href="/Space-Tourism-Website/destination.html" class="site-navigation__link">Destination</a>
-                    </li>
+                    <li class="site-navigation__item"><a href="./index.html" class="site-navigation__link">Home</a></li>
+                    <li class="site-navigation__item"><a href="./destination.html" class="site-navigation__link">Destination</a></li>
                     <li class="site-navigation__item"><a href="#!" class="site-navigation__link active">Crew</a></li>
-                    <li class="site-navigation__item">
-                        <a href="/Space-Tourism-Website/technology.html" class="site-navigation__link">Technology</a>
-                    </li>
+                    <li class="site-navigation__item"><a href="./technology.html" class="site-navigation__link">Technology</a></li>
                 </ol>
             </nav>
             <a href="#site-navigation" class="menu-btn">
-                <img class="menu-btn__img" src="/Space-Tourism-Website/assets/images/icons/menu.svg" alt="Hamburger menu button" />
+                <img class="menu-btn__img" src="./assets/images/icons/menu.svg" alt="Hamburger menu button" />
             </a>
         </header>
-        <div class="wrapper wrapper--crew">
+        <main class="wrapper wrapper--crew">
             <section class="crew">
-                <h2 class="crew__title"><span>02</span>MEET YOUR CREW</h2>
+                <h1 class="crew__title">
+                    <span>02</span>
+                    MEET YOUR CREW
+                </h1>
                 <div class="crew__content">
                     <div class="tab-panel tab-panel--crew">
-                        <div id="mId__douglas-tab" data-tab-name="douglas" role="tabpanel" class="tab-panel__tab active">
+                        <div id="mId__douglas-tab" data-tab-name="douglas" role="tabpanel" tabindex="0" class="tab-panel__tab active">
                             <div class="tab-panel__header-group">
-                                <h4 class="tab-panel__surtitle">Commander</h4>
-                                <h3 class="tab-panel__title">Douglas Hurley</h3>
+                                <span class="tab-panel__surtitle">Commander</span>
+                                <h2 class="tab-panel__title">Douglas Hurley</h2>
                             </div>
                             <p class="tab-panel__text">
                                 Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He
@@ -68,8 +65,8 @@
 
                         <div id="mId__mark-tab" data-tab-name="mark" role="tabpanel" class="tab-panel__tab">
                             <div class="tab-panel__header-group">
-                                <h4 class="tab-panel__surtitle">Mission Specialist</h4>
-                                <h3 class="tab-panel__title">MARK SHUTTLEWORTH</h3>
+                                <span class="tab-panel__surtitle">Mission Specialist</span>
+                                <h2 class="tab-panel__title">MARK SHUTTLEWORTH</h2>
                             </div>
 
                             <p class="tab-panel__text">
@@ -80,8 +77,8 @@
 
                         <div id="mId__victor-tab" data-tab-name="victor" role="tabpanel" class="tab-panel__tab">
                             <div class="tab-panel__header-group">
-                                <h4 class="tab-panel__surtitle">PILOT</h4>
-                                <h3 class="tab-panel__title">Victor Glover</h3>
+                                <span class="tab-panel__surtitle">PILOT</span>
+                                <h2 class="tab-panel__title">Victor Glover</h2>
                             </div>
 
                             <p class="tab-panel__text">
@@ -93,8 +90,8 @@
 
                         <div id="mId__anousheh-tab" data-tab-name="anousheh" role="tabpanel" class="tab-panel__tab">
                             <div class="tab-panel__header-group">
-                                <h4 class="tab-panel__surtitle">Flight Engineer</h4>
-                                <h3 class="tab-panel__title">Anousheh Ansari</h3>
+                                <span class="tab-panel__surtitle">Flight Engineer</span>
+                                <h2 class="tab-panel__title">Anousheh Ansari</h2>
                             </div>
 
                             <p class="tab-panel__text">
@@ -104,41 +101,49 @@
                         </div>
 
                         <nav class="tab-panel__pagination tab-panel-pagination">
-                            <ul class="tab-panel-pagination__list">
-                                <li class="tab-panel-pagination__item">
+                            <ul class="tab-panel-pagination__list" role="tablist">
+                                <li class="tab-panel-pagination__item" role="presentation">
                                     <button
                                         id="mId__douglas-tab-button"
+                                        type="button"
                                         role="tab"
                                         data-tab-name="douglas"
                                         aria-selected="true"
-                                        aria-controls="douglas-tab"
+                                        aria-controls="mId__douglas-tab"
+                                        aria-label="Set active tab - Douglas"
                                         class="tab-panel-pagination__button active"></button>
                                 </li>
-                                <li class="tab-panel-pagination__item">
+                                <li class="tab-panel-pagination__item" role="presentation">
                                     <button
                                         id="mId__mark-tab-button"
+                                        type="button"
                                         role="tab"
                                         data-tab-name="mark"
                                         aria-selected="false"
-                                        aria-controls="mark-tab"
+                                        aria-controls="mId__mark-tab"
+                                        aria-label="Set active tab - Mark"
                                         class="tab-panel-pagination__button"></button>
                                 </li>
-                                <li class="tab-panel-pagination__item">
+                                <li class="tab-panel-pagination__item" role="presentation">
                                     <button
                                         id="mId__victor-tab-button"
+                                        type="button"
                                         role="tab"
                                         data-tab-name="victor"
                                         aria-selected="false"
-                                        aria-controls="victor-tab"
+                                        aria-controls="mId__victor-tab"
+                                        aria-label="Set active tab - Victor"
                                         class="tab-panel-pagination__button"></button>
                                 </li>
-                                <li class="tab-panel-pagination__item">
+                                <li class="tab-panel-pagination__item" role="presentation">
                                     <button
                                         id="mId__anousheh-tab-button"
+                                        type="button"
                                         role="tab"
                                         data-tab-name="anousheh"
                                         aria-selected="false"
-                                        aria-controls="anousheh-tab"
+                                        aria-controls="mId__anousheh-tab"
+                                        aria-label="Set active tab - Anousheh"
                                         class="tab-panel-pagination__button"></button>
                                 </li>
                             </ul>
@@ -150,31 +155,31 @@
                             id="mId__douglas-picture"
                             data-tab-name="douglas"
                             class="pictures__img active"
-                            src="/Space-Tourism-Website/assets/images/crew/douglas/douglas__desktop.webp"
+                            src="./assets/images/crew/douglas/douglas__desktop.webp"
                             alt="Douglas Hurley" />
                         <img
                             id="mId__mark-picture"
                             data-tab-name="mark"
                             class="pictures__img"
-                            src="/Space-Tourism-Website/assets/images/crew/mark/mark__desktop.webp"
+                            src="./assets/images/crew/mark/mark__desktop.webp"
                             alt="Mark Shuttleworth" />
                         <img
                             id="mId__victor-picture"
                             data-tab-name="victor"
                             class="pictures__img"
-                            src="/Space-Tourism-Website/assets/images/crew/victor/victor__desktop.webp"
+                            src="./assets/images/crew/victor/victor__desktop.webp"
                             alt="Victor Glover" />
                         <img
                             id="mId__anousheh-picture"
                             data-tab-name="anousheh"
                             class="pictures__img"
-                            src="/Space-Tourism-Website/assets/images/crew/anousheh/anousheh__desktop.webp"
+                            src="./assets/images/crew/anousheh/anousheh__desktop.webp"
                             alt="Anousheh Ansari" />
                     </div>
                 </div>
             </section>
-        </div>
-        <!-- <script src="/Space-Tourism-Website/js/min/reset_focus_on_the_page.js"></script> -->
-        <script src="/Space-Tourism-Website/js/min/crew__tab_switcher.js" async></script>
+        </main>
+        <!-- <script src="./js/min/reset_focus_on_the_page.js"></script> -->
+        <script src="./js/min/crew__tab_switcher.js" async></script>
     </body>
 </html>
