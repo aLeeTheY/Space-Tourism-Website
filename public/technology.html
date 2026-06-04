@@ -11,8 +11,11 @@
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
 
-        <!-- * TITLE --->
+        <!-- * TITLE & DESCRIPTION --->
         <title>Space Tourism Website - Destination</title>
+        <meta
+            name="description"
+            content="Discover the technology that makes space tourism possible. Learn about our powerful launch vehicles, strategic spaceports, and advanced space capsules designed for your comfort and safety." />
 
         <link rel="stylesheet" href="./css/min/main.css" />
 
@@ -31,52 +34,66 @@
                     </a>
                 </div>
                 <ol class="site-navigation__list">
-                    <li class="site-navigation__item"><a href="./index.html" class="site-navigation__link">Home</a></li>
-                    <li class="site-navigation__item"><a href="./destination.html" class="site-navigation__link">Destination</a></li>
-                    <li class="site-navigation__item"><a href="./crew.html" class="site-navigation__link">Crew</a></li>
-                    <li class="site-navigation__item"><a href="#!" class="site-navigation__link active">Technology</a></li>
+                    <li class="site-navigation__item">
+                        <a href="./index.html" class="site-navigation__link">Home</a>
+                    </li>
+                    <li class="site-navigation__item">
+                        <a href="./destination.html" class="site-navigation__link">Destination</a>
+                    </li>
+                    <li class="site-navigation__item">
+                        <a href="./crew.html" class="site-navigation__link">Crew</a>
+                    </li>
+                    <li class="site-navigation__item">
+                        <a href="#!" class="site-navigation__link active">Technology</a>
+                    </li>
                 </ol>
             </nav>
             <a href="#site-navigation" class="menu-btn">
                 <img class="menu-btn__img" src="./assets/images/icons/menu.svg" alt="Hamburger menu button" />
             </a>
         </header>
-        <div class="wrapper wrapper--technology">
+        <main class="wrapper wrapper--technology">
             <section class="technology">
-                <h2 class="technology__title"><span>03</span>SPACE LAUNCH 101</h2>
+                <h1 class="technology__title">
+                    <span>03</span>
+                    SPACE LAUNCH 101
+                </h1>
                 <div class="technology__content">
                     <div class="tab-panel tab-panel--technology">
                         <nav class="tab-panel__pagination tab-panel-pagination tab-panel-pagination--technology">
-                            <ul class="tab-panel-pagination__list">
-                                <li class="tab-panel-pagination__item">
+                            <ul class="tab-panel-pagination__list" role="tablist">
+                                <li class="tab-panel-pagination__item" role="presentation">
                                     <button
                                         id="mId__launch-vehicle-tab-button"
+                                        type="button"
                                         role="tab"
                                         data-tab-name="launch-vehicle"
                                         aria-selected="true"
-                                        aria-controls="launch-vehicle-tab"
+                                        aria-controls="mId__launch-vehicle-tab"
                                         class="tab-panel-pagination__button active">
                                         0
                                     </button>
                                 </li>
-                                <li class="tab-panel-pagination__item">
+                                <li class="tab-panel-pagination__item" role="presentation">
                                     <button
                                         id="mId__spaceport-tab-button"
+                                        type="button"
                                         role="tab"
                                         data-tab-name="spaceport"
                                         aria-selected="false"
-                                        aria-controls="spaceport-tab"
+                                        aria-controls="mId__spaceport-tab"
                                         class="tab-panel-pagination__button">
                                         1
                                     </button>
                                 </li>
-                                <li class="tab-panel-pagination__item">
+                                <li class="tab-panel-pagination__item" role="presentation">
                                     <button
                                         id="mId__space-capsule-tab-button"
+                                        type="button"
                                         role="tab"
                                         data-tab-name="space-capsule"
                                         aria-selected="false"
-                                        aria-controls="space-capsule-tab"
+                                        aria-controls="mId__space-capsule-tab"
                                         class="tab-panel-pagination__button">
                                         2
                                     </button>
@@ -84,10 +101,15 @@
                             </ul>
                         </nav>
 
-                        <div id="mId__launch-vehicle-tab" data-tab-name="launch-vehicle" role="tabpanel" class="tab-panel__tab active">
+                        <div
+                            id="mId__launch-vehicle-tab"
+                            data-tab-name="launch-vehicle"
+                            role="tabpanel"
+                            tabindex="0"
+                            class="tab-panel__tab active">
                             <div class="tab-panel__header-group">
-                                <h4 class="tab-panel__surtitle">THE TERMINOLOGY…</h4>
-                                <h3 class="tab-panel__title">LAUNCH VEHICLE</h3>
+                                <span class="tab-panel__surtitle">THE TERMINOLOGY…</span>
+                                <h2 class="tab-panel__title">LAUNCH VEHICLE</h2>
                             </div>
 
                             <p class="tab-panel__text">
@@ -99,8 +121,8 @@
 
                         <div id="mId__spaceport-tab" data-tab-name="spaceport" role="tabpanel" class="tab-panel__tab">
                             <div class="tab-panel__header-group">
-                                <h4 class="tab-panel__surtitle">THE TERMINOLOGY…</h4>
-                                <h3 class="tab-panel__title">SPACEPORT</h3>
+                                <span class="tab-panel__surtitle">THE TERMINOLOGY…</span>
+                                <h2 class="tab-panel__title">SPACEPORT</h2>
                             </div>
 
                             <p class="tab-panel__text">
@@ -112,8 +134,8 @@
 
                         <div id="mId__space-capsule-tab" data-tab-name="space-capsule" role="tabpanel" class="tab-panel__tab">
                             <div class="tab-panel__header-group">
-                                <h4 class="tab-panel__surtitle">THE TERMINOLOGY…</h4>
-                                <h3 class="tab-panel__title">SPACE CAPSULE</h3>
+                                <span class="tab-panel__surtitle">THE TERMINOLOGY…</span>
+                                <h2 class="tab-panel__title">SPACE CAPSULE</h2>
                             </div>
 
                             <p class="tab-panel__text">
@@ -145,7 +167,7 @@
                     </div>
                 </div>
             </section>
-        </div>
+        </main>
         <!-- <script src="./js/min/reset_focus_on_the_page.js"></script> -->
         <script src="./js/min/technology__tab_switcher.js" async></script>
     </body>
