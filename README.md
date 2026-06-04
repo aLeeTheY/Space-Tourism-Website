@@ -49,7 +49,7 @@
   </p>
 
 [![Русский](https://img.shields.io/badge/Русский-blue)](README.md)
-[![English](https://img.shields.io/badge/English-blue)](README.ENG.md)
+[![English](https://img.shields.io/badge/English-blue)](README.EN.md)
 
 </div>
 
@@ -150,9 +150,9 @@
 
 <div align="center">
 
-|                               Desktop                               |                              Mobile                               |
-| :-----------------------------------------------------------------: | :---------------------------------------------------------------: |
-| ![Lighthouse Desktop](docs/benchmark/lighthouse__index_desktop.png) | ![Lighthouse Mobile](docs/benchmark/lighthouse__index_mobile.png) |
+|                               Desktop                                |                               Mobile                               |
+| :------------------------------------------------------------------: | :----------------------------------------------------------------: |
+| ![Lighthouse Desktop](docs/benchmark/lighthouse__index_desktop.avif) | ![Lighthouse Mobile](docs/benchmark/lighthouse__index_mobile.avif) |
 
 </div>
 
@@ -220,7 +220,7 @@ Space-Tourism-Website/
 ├── package-lock.json
 ├── package.json              # конфигурация проекта и зависимости
 ├── prettier.config.mts
-├── README.ENG.md
+├── README.EN.md
 ├── README.md
 └── tsconfig.json             # настройки TypeScript
 ```
