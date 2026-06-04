@@ -38,7 +38,7 @@
   <h1 align="center">Space Tourism Website</h1>
 
   <p align="center">
-    🚀 Responsive Space Tourism multipage site. Built with Sass & TypeScript. Pixel Perfect & 100/100 Lighthouse Performance.
+    🚀 Multi-page website for the Space Tourism company with responsive layout.
     <br />
     <br />
     <a href="https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3">Design (Layout)</a>
@@ -62,7 +62,13 @@
       <a href="#about-the-project">About the Project</a>
       <ul>
         <li><a href="#design">Design</a></li>
-        <li><a href="#preview">Preview</a></li>
+        <li>
+          <a href="#preview">Preview</a>
+          <ul>
+            <li><a href="#interface-preview">Interface Showcase (Desktop + Mobile)</a></li>
+            <li><a href="#adaptive-preview">Adaptive Design Showcase</a></li>
+          </ul>
+        </li>
         <li><a href="#key-features">Key Features</a></li>
         <ul>
           <li><a href="#google-lighthouse-benchmark">Google Lighthouse Benchmark</a></li>
@@ -109,11 +115,21 @@ The UI is based on the [**Space Tourism**](https://www.frontendmentor.io/challen
 
 ### Preview
 
-Below you can see a **website preview** (_**Desktop + Mobile**, click the image to open the live demo_):
+<!-- Below you can see a **website preview** (_**Desktop + Mobile**, click the image to open the live demo_): -->
+
+Below is an **interactive demonstration** of the project (_click on either image to visit the live demo_):
 
 <div align="center">
 
-[![Website Preview][website-preview]](https://aleethey.github.io/Space-Tourism-Website/)
+#### Interface Showcase (Desktop + Mobile) <a id="interface-preview"></a>
+
+[![Interface Showcase][interface-preview-gif]](https://aleethey.github.io/Space-Tourism-Website/)
+
+<br />
+
+#### Adaptive Design Showcase <a id="adaptive-preview"></a>
+
+[![Adaptive Design Showcase][adaptive-preview-gif]](https://aleethey.github.io/Space-Tourism-Website/)
 
 </div>
 
@@ -130,13 +146,13 @@ Below you can see a **website preview** (_**Desktop + Mobile**, click the image 
 
 #### Google Lighthouse Benchmark
 
-To verify the performance excellence in the **Google Lighthouse** benchmark, the testing results are presented below (**Desktop + Mobile**):
+To confirm the high performance scores in the ****Google Lighthouse** benchmark, the main page test results are presented below (**Desktop + Mobile**):
 
 <div align="center">
 
-|                             Desktop                              |                             Mobile                             |
-| :--------------------------------------------------------------: | :------------------------------------------------------------: |
-| ![Lighthouse Desktop](project/lighthouse_benchmark__desktop.png) | ![Lighthouse Mobile](project/lighthouse_benchmark__mobile.png) |
+|                               Desktop                               |                              Mobile                               |
+| :-----------------------------------------------------------------: | :---------------------------------------------------------------: |
+| ![Lighthouse Desktop](docs/benchmark/lighthouse__index_desktop.png) | ![Lighthouse Mobile](docs/benchmark/lighthouse__index_mobile.png) |
 
 </div>
 
@@ -166,31 +182,44 @@ Space-Tourism-Website/
 ├── .vscode/
 │   └── tasks.json            # extension file for `spencerwmiles.vscode-task-buttons`
 │
-├── project/                  # miscellaneous project files
-│   ├── preview/
-│   │
-│   ├── lighthouse_benchmark__desktop.png
-│   └── lighthouse_benchmark__mobile.png
+├── docs/                     # project documentation
+│   ├── benchmark/
+│   │   ├── lighthouse__index_desktop.avif
+│   │   └── lighthouse__index_mobile.avif
+│   └── preview/
+│       ├── adaptive_design.gif
+│       └── interface.gif
 │
 ├── public/                   # compiled project files and assets
 │   ├── assets/               # images and static resources
 │   ├── css/
 │   ├── js/
 │   │
+│   ├── apple-touch-icon.png
 │   ├── crew.html
 │   ├── destination.html
+│   ├── favicon-96x96.png
 │   ├── favicon.ico
+│   ├── favicon.svg
 │   ├── index.html
-│   └── technology.html
+│   ├── robots.txt
+│   ├── site.webmanifest
+│   ├── sitemap.xml
+│   ├── technology.html
+│   ├── web-app-manifest-192x192.png
+│   └── web-app-manifest-512x512.png
 │
 ├── src/
 │   ├── scss/                 # source Sass files
 │   └── ts/                   # source TypeScript files
 │
+├── .browserslistrc
+├── .editorconfig
 ├── .gitignore
 ├── LICENSE
 ├── package-lock.json
 ├── package.json              # project configuration and dependencies
+├── prettier.config.mts
 ├── README.ENG.md
 ├── README.md
 └── tsconfig.json             # TypeScript configuration
@@ -343,7 +372,13 @@ Distributed under the [MIT][license-url] License. See `LICENSE` file for more in
 
 ## Contact
 
+<!-- [![GitHub][GitHub-logo]](https://github.com/aLeeTheY)
+[![Telegram][Telegram-logo]](https://t.me/aLeeTheY)
+[![Gmail][Gmail-logo]](mailto:aleethey@gmail.com) -->
+
 GitHub: [aLeeTheY](https://github.com/aLeeTheY)
+<br/>
+Telegram: [@aLeeTheY](https://t.me/aLeeTheY)
 <br/>
 Email: [aleethey@gmail.com](mailto:aleethey@gmail.com)
 
@@ -411,4 +446,5 @@ Without these tools, the development of this project would have been **impossibl
 [Firefox-url]: https://www.firefox.com/
 [Yandex-logo]: https://custom-icon-badges.demolab.com/badge/Yandex%20Browser-F03911?logo=yandex-browser&style=for-the-badge
 [Yandex-url]: https://browser.yandex.com/
-[website-preview]: project/preview/preview.gif
+[interface-preview-gif]: docs/preview/interface.gif
+[adaptive-preview-gif]: docs/preview/adaptive_design.gif

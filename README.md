@@ -38,7 +38,7 @@
   <h1 align="center">Space Tourism Website</h1>
 
   <p align="center">
-    🚀 Многостраничное адаптивное приложение Space Tourism. Стек — Sass & TypeScript. Pixel Perfect реализация и 100/100 Lighthouse Performance.
+    🚀 Многостраничный веб-сайт для компании космического туризма с адаптивным дизайном.
     <br />
     <br />
     <a href="https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3">Дизайн (макет)</a>
@@ -62,7 +62,13 @@
       <a href="#о-проекте">О проекте</a>
       <ul>
         <li><a href="#дизайн">Дизайн</a></li>
-        <li><a href="#предпросмотр">Предпросмотр</a></li>
+        <li>
+          <a href="#preview">Предпросмотр</a>
+          <ul>
+            <li><a href="#interface-preview">Интерфейс (Desktop + Mobile)</a></li>
+            <li><a href="#adaptive-preview">Демонстрация адаптива</a></li>
+          </ul>
+        </li>
         <li><a href="#ключевые-особенности">Ключевые особенности</a></li>
         <ul>
           <li><a href="#google-lighthouse-benchmark">Google Lighthouse Benchmark</a></li>
@@ -109,11 +115,21 @@
 
 ### Предпросмотр
 
-Ниже представлен **предварительный просмотр** сайта (_**Desktop + Mobile**, нажмите на изображение для перехода к демо_):
+<!-- Ниже представлен **предварительный просмотр** сайта (_**Desktop + Mobile**, нажмите на изображение для перехода к демо_): -->
+
+Ниже представлена **интерактивная демонстрация** проекта (_нажмите на любое изображение для перехода к живому демо_):
 
 <div align="center">
 
-[![Предпросмотр сайта][website-preview]](https://aleethey.github.io/Space-Tourism-Website/)
+#### Интерфейс (Desktop + Mobile) <a id="interface-preview"></a>
+
+[![Интерфейс проекта][interface-preview-gif]](https://aleethey.github.io/Space-Tourism-Website/)
+
+<br />
+
+#### Демонстрация адаптива <a id="adaptive-preview"></a>
+
+[![Демонстрация адаптива][adaptive-preview-gif]](https://aleethey.github.io/Space-Tourism-Website/)
 
 </div>
 
@@ -130,13 +146,13 @@
 
 #### Google Lighthouse Benchmark
 
-В качестве подтверждения высоких показателей производительности в бенчмарке **Google Lighthouse**, ниже представлены результаты тестирования (**Desktop + Mobile**):
+В качестве подтверждения высоких показателей производительности в бенчмарке **Google Lighthouse**, ниже представлены результаты тестирования главной страницы (**Desktop + Mobile**):
 
 <div align="center">
 
-|                             Desktop                              |                             Mobile                             |
-| :--------------------------------------------------------------: | :------------------------------------------------------------: |
-| ![Lighthouse Desktop](project/lighthouse_benchmark__desktop.png) | ![Lighthouse Mobile](project/lighthouse_benchmark__mobile.png) |
+|                               Desktop                               |                              Mobile                               |
+| :-----------------------------------------------------------------: | :---------------------------------------------------------------: |
+| ![Lighthouse Desktop](docs/benchmark/lighthouse__index_desktop.png) | ![Lighthouse Mobile](docs/benchmark/lighthouse__index_mobile.png) |
 
 </div>
 
@@ -166,31 +182,44 @@ Space-Tourism-Website/
 ├── .vscode/
 │   └── tasks.json            # файл расширения `spencerwmiles.vscode-task-buttons`
 │
-├── project/                  # прочие проектные файлы
-│   ├── preview/
-│   │
-│   ├── lighthouse_benchmark__desktop.png
-│   └── lighthouse_benchmark__mobile.png
+├── docs/                     # проектная документация
+│   ├── benchmark/
+│   │   ├── lighthouse__index_desktop.avif
+│   │   └── lighthouse__index_mobile.avif
+│   └── preview/
+│       ├── adaptive_design.gif
+│       └── interface.gif
 │
 ├── public/                   # скомпилированные файлы проекта и ассеты
 │   ├── assets/               # изображения и статические ресурсы
 │   ├── css/
 │   ├── js/
 │   │
+│   ├── apple-touch-icon.png
 │   ├── crew.html
 │   ├── destination.html
+│   ├── favicon-96x96.png
 │   ├── favicon.ico
+│   ├── favicon.svg
 │   ├── index.html
-│   └── technology.html
+│   ├── robots.txt
+│   ├── site.webmanifest
+│   ├── sitemap.xml
+│   ├── technology.html
+│   ├── web-app-manifest-192x192.png
+│   └── web-app-manifest-512x512.png
 │
 ├── src/
 │   ├── scss/                 # исходные Sass-файлы
 │   └── ts/                   # исходные TypeScript-файлы
 │
+├── .browserslistrc
+├── .editorconfig
 ├── .gitignore
 ├── LICENSE
 ├── package-lock.json
 ├── package.json              # конфигурация проекта и зависимости
+├── prettier.config.mts
 ├── README.ENG.md
 ├── README.md
 └── tsconfig.json             # настройки TypeScript
@@ -343,7 +372,13 @@ Copyright © 2025 [aLeeTheY](https://github.com/aLeeTheY)
 
 ## Контакты
 
+<!-- [![GitHub][GitHub-logo]](https://github.com/aLeeTheY)
+[![Telegram][Telegram-logo]](https://t.me/aLeeTheY)
+[![Gmail][Gmail-logo]](mailto:aleethey@gmail.com) -->
+
 GitHub: [aLeeTheY](https://github.com/aLeeTheY)
+<br/>
+Telegram: [@aLeeTheY](https://t.me/aLeeTheY)
 <br/>
 Email: [aleethey@gmail.com](mailto:aleethey@gmail.com)
 
@@ -411,4 +446,5 @@ Email: [aleethey@gmail.com](mailto:aleethey@gmail.com)
 [Firefox-url]: https://www.firefox.com/
 [Yandex-logo]: https://custom-icon-badges.demolab.com/badge/Yandex%20Browser-F03911?logo=yandex-browser&style=for-the-badge
 [Yandex-url]: https://browser.yandex.com/
-[website-preview]: project/preview/preview.gif
+[interface-preview-gif]: docs/preview/interface.gif
+[adaptive-preview-gif]: docs/preview/adaptive_design.gif
