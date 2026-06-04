@@ -1,29 +1,39 @@
 {
-    "name": "basic-website-template",
-    "version": "1.0.0",
-    "description": "Одностраничный сайт, сверстанный по макету из Figma. Реализована статическая кроссбраузерная верстка.",
+    "name": "space-tourism-website",
+    "version": "1.2.0",
+    "description": "🚀 Multi-page website for the Space Tourism company with responsive layout.",
     "private": true,
-    "homepage": "https://github.com/npm/example#readme",
+    "homepage": "https://github.com/aLeeTheY/Space-Tourism-Website#readme",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/npm/example.git"
+        "url": "git+https://github.com/aLeeTheY/Space-Tourism-Website.git"
+    },
+    "bugs": {
+        "url": "https://github.com/aLeeTheY/Space-Tourism-Website/issues"
     },
     "author": {
         "name": "Vladimir Nikulin",
-        "email": "mail.jorey@gmail.com",
-        "url": "https://github.com/aBLeeWeeAN"
+        "email": "aleethey@gmail.com",
+        "url": "https://github.com/aLeeTheY"
     },
-    "license": "ISC",
+    "license": "MIT",
     "type": "module",
     "devDependencies": {
-        "autoprefixer": "^10.4.27",
+        "@prettier/plugin-xml": "^3.4.2",
+        "autoprefixer": "^10.5.0",
+        "browser-sync": "^3.0.4",
         "chokidar-cli": "^3.0.0",
         "cross-env": "^10.1.0",
+        "esbuild": "^0.28.0",
+        "hint": "^7.1.13",
         "npm-run-all": "^4.1.5",
         "postcss-cli": "^11.0.1",
+        "prettier": "^3.8.3",
+        "prettier-plugin-jinja-template": "^2.2.0",
+        "prettier-plugin-sh": "^0.18.1",
         "rimraf": "^6.1.3",
-        "sass": "^1.98.0",
-        "typescript": "^6.0.2"
+        "sass": "^1.100.0",
+        "typescript": "^6.0.3"
     },
     "scripts": {
         "clean": "rimraf public/css public/js",
@@ -45,9 +55,5 @@
         "__SERVER__": "",
         "serve": "browser-sync start --server \"public\" --files \"public/**/*\"",
         "start": "npm-run-all --serial build:release serve"
-    },
-    "dependencies": {
-        "browser-sync": "^3.0.4",
-        "esbuild": "^0.27.4"
     }
 }
