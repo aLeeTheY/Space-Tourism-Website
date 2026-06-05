@@ -1,0 +1,35 @@
+1. Convert JPG and PNG files to WEBP format (recursively):
+
+Get-ChildItem -Recurse -Include *.jpg, *.png | ForEach-Object {
+    $output = [System.IO.Path]::ChangeExtension($_.FullName, ".webp")
+    # Added -y for automatic overwrite
+    ffmpeg -y -i $_.FullName -c:v libwebp -quality 90 -preset photo -compression_level 6 "$output"
+}
+
+2. Convert JPG and PNG files to WEBP format (lossless + recursively):
+
+Get-ChildItem -Recurse -Include *.jpg, *.jpeg, *.png | ForEach-Object {
+    $output = [System.IO.Path]::ChangeExtension($_.FullName, ".webp")
+    # -y added for automatic overwrite
+    ffmpeg -y -i $_.FullName -c:v libwebp -lossless 1 -compression_level 6 "$output"
+}
+
+3. A folder `original/` will be created, in which the old original PNG and JPG files will be placed, except WEBP (recursively):
+
+Get-ChildItem -Recurse -Include *.jpg, *.jpeg, *.png | ForEach-Object {
+    # 1. Define paths
+    $parentDir = $_.DirectoryName
+    $originalDir = Join-Path $parentDir "original"
+    $outputWebp = [System.IO.Path]::ChangeExtension($_.FullName, ".webp")
+
+    # 2. Create "original" folder if it doesn't exist
+    if (!(Test-Path $originalDir)) {
+        New-Item -ItemType Directory -Path $originalDir | Out-Null
+    }
+
+    # 3. Convert to WebP (overwriting if exists)
+    ffmpeg -y -i $_.FullName -c:v libwebp -quality 82 -preset photo -compression_level 6 "$outputWebp"
+
+    # 4. Move the original file to the "original" folder
+    Move-Item -Path $_.FullName -Destination $originalDir -Force
+}
