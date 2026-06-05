@@ -108,9 +108,9 @@
 **/public/css/
 **/public/js/
 
-assets/
-css/
-js/
+/assets/
+/css/
+/js/
 
 **/backup/
 **/old/
