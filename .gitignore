@@ -108,6 +108,10 @@
 **/public/css/
 **/public/js/
 
+assets/
+css/
+js/
+
 **/backup/
 **/old/
 
