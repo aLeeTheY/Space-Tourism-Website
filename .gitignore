@@ -1,41 +1,116 @@
-# Ignore node_modules/ folder
-node_modules/
+# ! --- 1. Игнорируем абсолютно всё по умолчанию
+# ! --------------------------------------------
+*
 
-# Ignore .vscode/ folder
-#.vscode/
+# ! --- 2. Разрешаем Git наблюдать за любыми папками
+# ! ------------------------------------------------
+!*/
+!**/
 
-# Ignore all CSS files and folders
-css/
+# ! --- 3. Разрешаем проверять только конкретные расширения
+# ! -------------------------------------------------------
+# * GIT FILES
+!**/*.gitkeep
+!**/*.gitignore
+!**/*.gitattributes
 
-*.min.css
-*.min.css.map
+# * SERVICE FILES
+!**/*.browserslistrc
+!**/*.editorconfig
 
-*.css
-*.css.map
+# * IGNORE FILES
+!**/*.dockerignore
+!**/*.prettierignore
+!**/*.stylelintignore
 
-# Ignore some TypeScript files
-*.d.ts
-*.d.ts.map
+# * CSS | SCSS | SASS
+!**/*.css
+!**/*.scss
+!**/*.sass
 
-# Ignore *.tsbuildinfo files
-*.tsbuildinfo
+# * JS | TS
+!**/*.js
+!**/*.cjs
+!**/*.mjs
+!**/*.ts
+!**/*.cts
+!**/*.mts
 
-# Ignore all JS files and folders
-js/
+# * GULP
+!gulpfile.js
+!**/gulp/**/*.js
 
-*.js
-*.js.map
+# * HTML | NUNJUCKS
+!**/*.html
+!**/*.nj
+!**/*.njk
+!**/*.nunjucks
 
-# Allow all configuration files on JS
-!*.config.js
+# * JSON | YAML
+!**/*.json
+!**/*.webmanifest
 
-# Ingore some fonts files
-*.otf
-*.ttf
+!**/*.yml
+!**/*.yaml
 
-# Ignore all build folders
-dist/
-build/
+# * XML | SVG
+!**/*.xml
+!**/*.svg
 
-# Ignore all old/ folders
-old/
+# * MEDIA
+!**/*.ico
+!**/*.gif
+
+!**/*.png
+!**/*.jpg
+!**/*.jpeg
+!**/*.avif
+!**/*.webp
+
+!**/*.mp3
+!**/*.mp4
+!**/*.webm
+
+# * FONTS
+!**/*.eot
+!**/*.otf
+!**/*.ttf
+!**/*.woff
+!**/*.woff2
+
+# * MARKDOWN | LICENSE
+!**/*.md
+!**/LICENSE
+
+# * HUSKY
+!**/.husky/*
+
+# * OTHER
+!**/*.txt
+
+# * MAPS
+# !**/*.map
+
+# ! --- 4. Папки и подпапки под запретом
+# ! ------------------------------------
+**/.husky/_/
+
+**/node_modules/
+# **/vendors/
+
+**/out/
+**/dist/
+**/build/
+
+**/archive/
+
+# **/public/
+**/public/css/
+**/public/js/
+
+**/backup/
+**/old/
+
+# ! --- 5. Файлы под запретом
+# ! -------------------------
+out.txt
