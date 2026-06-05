@@ -1,55 +1,117 @@
-# Ignore node_modules/ folder
-node_modules/
+# ! --- 1. Игнорируем абсолютно всё по умолчанию
+# ! --------------------------------------------
+*
 
-# Ignore .vscode/ folder
-#.vscode/
+# ! --- 2. Разрешаем Git наблюдать за любыми папками
+# ! ------------------------------------------------
+!*/
+!**/
 
-# Ignore all CSS files and folders
-# css/
+# ! --- 3. Разрешаем проверять только конкретные расширения
+# ! -------------------------------------------------------
+# * GIT FILES
+# !**/*.gitkeep
+!**/*.gitignore
+# !**/*.gitattributes
 
-# *.min.css
-# *.min.css.map
+# * SERVICE FILES
+# !**/*.browserslistrc
+# !**/*.editorconfig
 
-# *.css
-# *.css.map
+# * IGNORE FILES
+# !**/*.dockerignore
+# !**/*.prettierignore
+# !**/*.stylelintignore
 
-# Ignore all *.map files
-*.map
+# * CSS | SCSS | SASS
+!**/*.css
+# !**/*.scss
+# !**/*.sass
 
-# Ignore some TypeScript files
-*.d.ts
-*.d.ts.map
+# * JS | TS
+!**/*.js
+!**/*.cjs
+!**/*.mjs
+# !**/*.ts
+# !**/*.cts
+# !**/*.mts
 
-# Ignore *.tsbuildinfo files
-*.tsbuildinfo
+# * GULP
+# !gulpfile.js
+# !**/gulp/**/*.js
 
-# Ignore all JS files and folders
-# js/
+# * HTML | NUNJUCKS
+!**/*.html
+# !**/*.nj
+# !**/*.njk
+# !**/*.nunjucks
 
-# *.js
-# *.js.map
+# * JSON | YAML
+!**/*.json
+!**/*.webmanifest
 
-# Allow all configuration files on JS
-!*.config.js
+# !**/*.yml
+# !**/*.yaml
 
-# Ingore some fonts files
-*.otf
-*.ttf
+# * XML | SVG
+!**/*.xml
+!**/*.svg
 
-# Ignore all build folders
-dist/
-build/
+# * MEDIA
+!**/*.ico
+!**/*.gif
 
-# Ignore all old/ folders
-old/
+!**/*.png
+!**/*.jpg
+!**/*.jpeg
+!**/*.avif
+!**/*.webp
 
-# Ignore project/ and public/ folders for gh-pages branch
-project/
-public/
-src/
+!**/*.mp3
+!**/*.mp4
+!**/*.webm
 
-**/original
+# * FONTS
+!**/*.eot
+!**/*.otf
+!**/*.ttf
+!**/*.woff
+!**/*.woff2
 
-# Ignore all .txt files, but allow robots.txt
-*.txt
-!**/robots.txt
+# * MARKDOWN | LICENSE
+# !**/*.md
+# !**/LICENSE
+
+# * OTHER
+!**/*.txt
+
+# * MAPS
+# !**/*.map
+
+# ! --- 4. Папки и подпапки под запретом
+# ! ------------------------------------
+**/.husky/
+
+**/.vscode/
+
+**/node_modules/
+**/vendors/
+
+**/out/
+**/dist/
+**/build/
+
+**/archive/
+
+**/public/
+**/public/css/
+**/public/js/
+
+**/original/
+
+**/backup/
+**/old/
+
+# ! --- 5. Файлы под запретом
+# ! -------------------------
+out.txt
