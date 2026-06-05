@@ -249,9 +249,9 @@ The project has been tested for correct rendering and script stability in the la
 - [![Opera][Opera-logo]][Opera-url]
 
 > [!IMPORTANT]
-> This information applies to version **[1.1.0](https://github.com/aLeeTheY/Space-Tourism-Website/releases/tag/1.1.0)**. At the time of verification, the project was rendered correctly in the latest stable versions of all [supported browsers](#supported-browsers).
+> This information applies to version **[1.2.0](https://github.com/aLeeTheY/Space-Tourism-Website/releases/tag/1.2.0)**. At the time of verification, the project was rendered correctly in the latest stable versions of all [supported browsers](#supported-browsers).
 >
-> **Last verification date: March 16, 2026**
+> **Last verification date: June 5, 2026**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -308,7 +308,7 @@ The project uses the following `npm` commands:
 |         Command          |                                    Description                                     |
 | :----------------------: | :--------------------------------------------------------------------------------: |
 |     `npm run clean`      |                 Remove compiled CSS and JS directories (`rimraf`)                  |
-|    `npm run build:ts`    |                 Compile regular JS bundles via `esbuild` (ES2015)                  |
+|    `npm run build:ts`    |                 Compile regular JS bundles via `esbuild` (ES2017)                  |
 |  `npm run build:ts:min`  |             Compile minified JS bundles with sourcemaps via `esbuild`              |
 |   `npm run build:scss`   |    Compile regular CSS via `sass`, then process with `PostCSS` + `Autoprefixer`    |
 | `npm run build:scss:min` | Compile minified CSS with sourcemaps, then process with `PostCSS` + `Autoprefixer` |

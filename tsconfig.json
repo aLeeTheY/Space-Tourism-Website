@@ -5,9 +5,9 @@
         "outDir": "./public/js", // куда компилируем JS
 
         "module": "esnext", // современный модульный синтаксис
-        "target": "es2015", // target is ES6/ES2015
+        "target": "es2017", // target is es2017
 
-        "lib": ["DOM", "ES2015"], // библиотеки для TS
+        "lib": ["DOM", "ES2017"], // библиотеки для TS
 
         "strict": true, // включить строгий режим для безопасного кода
         "noImplicitAny": true, // запрещает неявный any
