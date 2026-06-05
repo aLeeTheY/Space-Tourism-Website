@@ -107,13 +107,13 @@
 
 ## About the Project
 
-The primary goal of this project is to develop a multi-page responsive application to practice architectural patterns using **Sass** and **TypeScript**.
+The main goal of the project is to develop a multi-page responsive website to practice architectural approaches using **Sass** and **TypeScript**.
 
-The project is implemented without external UI frameworks or CMS, focusing on a clean and scalable codebase. **Sass** is utilized for modular style organization, while **TypeScript** provides type-safe client-side logic for interface state management (tabs, pagination).
+The project was built without any third-party UI frameworks or CMS, focusing instead on creating a clean and scalable codebase. **Sass** is utilized for modular style organization, while **TypeScript** ensures type-safe client-side logic for managing UI states (tab switching, interactive pagination, and navigation).
 
 ### Design
 
-The UI is based on the [**Space Tourism**](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3) design provided by [**Frontend Mentor**](https://www.frontendmentor.io/). The main objective was a high-fidelity (Pixel Perfect) implementation of the interface and its adaptation across various display resolutions while maintaining design system integrity.
+The visual component is based on the [**Space Tourism**](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3) mockup from the [**Frontend Mentor**](https://www.frontendmentor.io/) platform. The key objective was a high-fidelity (**Pixel Perfect**) interface implementation and its adaptation to various screen resolutions while maintaining the integrity of the original design system.
 
 ### Preview
 
