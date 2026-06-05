@@ -69,10 +69,12 @@
             <li><a href="#adaptive-preview">Adaptive Design Showcase</a></li>
           </ul>
         </li>
-        <li><a href="#key-features">Key Features</a></li>
-        <ul>
-          <li><a href="#google-lighthouse-benchmark">Google Lighthouse Benchmark</a></li>
-        </ul>
+        <li>
+          <a href="#key-features">Key Features</a>
+          <ul>
+            <li><a href="#google-lighthouse-benchmark">Google Lighthouse Benchmark</a></li>
+          </ul>
+        </li>
         <li><a href="#built-with">Built With</a></li>
         <li><a href="#project-structure">Project Structure</a></li>
         <li><a href="#supported-browsers">Supported Browsers</a></li>
@@ -143,6 +145,7 @@ Below is an **interactive demonstration** of the project (_click on either image
 - **Static Architecture**: Engineered as a client-side static application without reliance on CMS or Server-Side Rendering (SSR).
 - **Performance Optimization**: Achieved a **100/100 [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) Performance score** and **90+ across all other benchmarks**.
 - **Template Versatility**: Clean, modular project structure designed for easy adaptation as a boilerplate for future static sites.
+- **Cross‑browser CSS Stability**: Automated vendor prefixing via PostCSS + Autoprefixer ensures consistent rendering across all [supported browsers](#supported-browsers).
 
 #### Google Lighthouse Benchmark
 
@@ -160,16 +163,27 @@ To confirm the high performance scores in the \***\*Google Lighthouse** benchmar
 
 The project was built using the following tools and technologies:
 
-- **FRONTEND**:
+- **Environment**:
+  - [![Node.js][NodeJS-logo]][NodeJS-url]
+    - [![npm][Npm-logo]][Npm-url]
+
+- **Frontend**:
   - [![HTML][HTML-logo]][HTML-url]
   - [![Sass][Sass-logo]][Sass-url]
   - [![TypeScript][TypeScript-logo]][TypeScript-url]
 
-  - **BUILD TOOLS**:
-    - [![Node.js][NodeJS-logo]][NodeJS-url]
-    - [![Npm][Npm-logo]][Npm-url]
+- **Build Tools**:
+  - [![esbuild][esbuild-logo]][esbuild-url]
+  - [![BrowserSync][BrowserSync-logo]][BrowserSync-url]
+  - [![PostCSS][PostCSS-logo]][PostCSS-url]
+    - [![Autoprefixer][Autoprefixer-logo]][Autoprefixer-url]
+      - [![Browserslist][Browserslist-logo]][Browserslist-url]
 
-- **VERSION CONTROL SYSTEM**:
+- **Code Quality**:
+  - [![EditorConfig][EditorConfig-logo]][EditorConfig-url]
+  - [![Prettier][Prettier-logo]][Prettier-url]
+
+- **Version Control**:
   - [![Git][Git-logo]][Git-url]
 
 ### Project Structure
@@ -194,7 +208,6 @@ Space-Tourism-Website/
 │   ├── assets/               # images and static resources
 │   ├── css/
 │   ├── js/
-│   │
 │   ├── apple-touch-icon.png
 │   ├── crew.html
 │   ├── destination.html
@@ -292,26 +305,20 @@ The project uses the following `npm` commands:
 
 <div align="center">
 
-|         Command          |                                       Description                                       |
-| :----------------------: | :-------------------------------------------------------------------------------------: |
-|     `npm run clean`      |                     Remove all previously compiled CSS and JS files                     |
-|    `npm run build:ts`    |                                Compile regular JS files                                 |
-|  `npm run build:ts:min`  |                                Compile minified JS files                                |
-|  `npm run build:ts:all`  |                       Compile both regular and minified JS files                        |
-|   `npm run build:scss`   |                                Compile regular CSS files                                |
-| `npm run build:scss:min` |                               Compile minified CSS files                                |
-| `npm run build:scss:all` |                       Compile both regular and minified CSS files                       |
-|    `npm run watch:ts`    |               Automatically compile regular JS files when TS files change               |
-|  `npm run watch:ts:min`  |              Automatically compile minified JS files when TS files change               |
-|  `npm run watch:ts:all`  |      Automatically compile both regular and minified JS files when TS files change      |
-|   `npm run watch:scss`   |          Automatically compile regular CSS files when SCSS (Sass) files change          |
-| `npm run watch:scss:min` |         Automatically compile minified CSS files when SCSS (Sass) files change          |
-| `npm run watch:scss:all` | Automatically compile both regular and minified CSS files when SCSS (Sass) files change |
-|     `npm run watch`      |               Automatically compile JS and CSS when TS/SCSS files change                |
-|  `npm run build:debug`   |                Build regular JS and CSS simultaneously (for development)                |
-| `npm run build:release`  |                        Build minified JS and CSS for production                         |
-|     `npm run serve`      |              Start a local server (`localhost`, for development / testing)              |
-|     `npm run start`      |                Build JS and CSS in `release` mode + start a local server                |
+|         Command          |                                    Description                                     |
+| :----------------------: | :--------------------------------------------------------------------------------: |
+|     `npm run clean`      |                 Remove compiled CSS and JS directories (`rimraf`)                  |
+|    `npm run build:ts`    |                 Compile regular JS bundles via `esbuild` (ES2015)                  |
+|  `npm run build:ts:min`  |             Compile minified JS bundles with sourcemaps via `esbuild`              |
+|   `npm run build:scss`   |    Compile regular CSS via `sass`, then process with `PostCSS` + `Autoprefixer`    |
+| `npm run build:scss:min` | Compile minified CSS with sourcemaps, then process with `PostCSS` + `Autoprefixer` |
+|    `npm run watch:ts`    |                     Watch TS files and auto-compile regular JS                     |
+|   `npm run watch:scss`   |                   Watch SCSS files and auto-compile regular CSS                    |
+|     `npm run watch`      |                Run JS and CSS watchers in parallel (`npm-run-all`)                 |
+|  `npm run build:debug`   |           Clean output directories, then build regular CSS and JS files            |
+| `npm run build:release`  |           Clean output directories, then build minified CSS and JS files           |
+|     `npm run serve`      |           Start `BrowserSync` local server watching the `public/` folder           |
+|     `npm run start`      |        Execute `build:release` and launch the local server with live reload        |
 
 </div>
 
@@ -319,23 +326,23 @@ The project uses the following `npm` commands:
 
 ## Development Challenges
 
-- **DOM Structure Engineering**: Resolved ambiguities in the design layout to build a logical and semantically correct document object model.
-- **Typography Architecture**: Implemented a system of Sass mixins to manage fonts. This allowed for encapsulating text properties (font-size, line-height, weight) and reusing them across component styles, eliminating code redundancy and simplifying scaling.
-- **Sass Modularization**: Established a multi-file architecture to strictly isolate global assets, components, and page-specific styles.
-- **Responsive Complexity**: Managed granular style changes across various breakpoints, ensuring layout precision where differences were limited to single CSS properties.
-- **Tap Highlight Suppression**: Disabled native mobile browser overlays on link-based buttons (`<a>`) to achieve clean, custom interaction feedback.
-- **Sticky Hover Mitigation**: Resolved an issue where buttons retained their hover state during back navigation on touch devices by implementing `@media (hover: hover)` logic.
+- **DOM Structure Design**: The non-obvious element hierarchy in the layout required additional analysis to establish a logical and semantically correct markup structure.
+- **Typography Architecture**: Implemented a system of Sass mixins for font management. This allowed text parameters (size, line-height, weight) to be encapsulated and reused across component styles, preventing code duplication and streamlining scalability.
+- **Sass Architecture**: Organized a multi-file style structure with a clear separation of global variables, mixins, components, and page-specific styles.
+- **Responsive Layout Complexity**: Managing a large volume of media queries, where differences often came down to just 1–2 properties, demanded high precision during debugging and layout verification.
+- **Tap-Response Customization**: Disabled native system highlight overlays for links and interactive elements on mobile devices to eliminate visual artifacts upon clicking.
+- **Fixing the "Sticky" Hover Effect**: Resolved a common mobile browser bug where buttons retained their `:hover` state after being tapped or when navigating back through history. The issue was fixed by utilizing the `@media (hover: hover)` media query.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Key Skills
 
-- **UI/UX Implementation**: Precision-driven conversion of complex design layouts into semantic HTML with a focus on pixel-perfect accuracy.
-- **BEM Methodology**: Architecting scalable and maintainable CSS structures using BEM to prevent specificity conflicts.
-- **Client-side Logic (TypeScript)**: Developed type-safe logic for interactive UI components (tabs, pagination) using TypeScript to ensure code stability and maintainability.
-- **Responsive Web Design**: Engineering robust adaptive interfaces for multi-page applications with a mobile-first approach.
-- **Performance Optimization**: Improved rendering speed (LCP) by implementing `.webp` imagery, balanced asset compression with minimal quality loss, and non-blocking script execution (`async/defer`).
-- **Workflow & CI/CD**: Professional Git version control, dependency management via `npm`, and comprehensive project documentation.
+- **UI/UX Implementation**: Gained experience in accurately translating complex design layouts into semantic HTML markup while maintaining pixel-perfect fidelity.
+- **Style Architecture (BEM)**: Designed a scalable and maintainable CSS structure using the BEM methodology, effectively eliminating selector specificity conflicts.
+- **Client-Side Logic (TypeScript)**: Developed type-safe logic for interactive components (tabs, pagination) using TypeScript to ensure code stability and readability.
+- **Responsive Web Design**: Created resilient responsive interfaces for multi-page applications with a deep focus on mobile UX.
+- **Page Load Optimization**: Improved loading performance (LCP) by adopting the `.webp` format, applying balanced asset compression with minimal quality loss, and leveraging non-blocking script loading (`async`/`defer`).
+- **Workflow Organization**: Developed professional skills in Git repository management, branching workflows, handling dependencies via `npm`, and documenting project architecture.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -343,15 +350,15 @@ The project uses the following `npm` commands:
 
 ## Roadmap
 
-- [x] Development of HTML documents and page styling:
+- [x] HTML document development and page styling:
   - [x] `index.html`
   - [x] `destination.html`
   - [x] `crew.html`
   - [x] `technology.html`
-- [x] Implementation of interactive tab and pagination logic using TypeScript
-- [x] Responsive adaptation for **Tablet** viewports
-- [x] Responsive adaptation for **Mobile** viewports
-- [x] Design fidelity verification and **QA**
+- [x] Implementation of interactive tabs and pagination logic in TypeScript
+- [x] Integration of responsiveness for tablet devices (**Tablet**)
+- [x] Integration of responsiveness for mobile devices (**Mobile**)
+- [x] Verification of design layout compliance (**Quality Assurance**)
 - [x] Preparation of technical documentation and `README.md`
 
 The full list of planned features and known issues is available in the [Issues][issues-url] section.
@@ -391,7 +398,6 @@ Email: [aleethey@gmail.com](mailto:aleethey@gmail.com)
 [aLeeTheY](https://github.com/aLeeTheY) expresses gratitude to the developers and communities of the following projects:
 
 - [Figma](https://www.figma.com/)
-- [Frontend Mentor](https://www.frontendmentor.io/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Sass](https://sass-lang.com/)
 - [TypeScript](https://www.typescriptlang.org/)
@@ -404,6 +410,12 @@ Email: [aleethey@gmail.com](mailto:aleethey@gmail.com)
 - [gifsicle](https://github.com/kohler/gifsicle)
 - [Chrome DevTools](https://developer.chrome.com/docs/devtools)
 - [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview)
+- [Browsersync](https://browsersync.io/)
+- [EditorConfig](https://editorconfig.org/)
+- [Prettier](https://prettier.io/)
+- [PostCSS](https://postcss.org/)
+- [autoprefixer](https://github.com/postcss/autoprefixer)
+- [browserslist](https://github.com/browserslist/browserslist)
 
 Without these tools, the development of this project would have been **impossible**.
 
@@ -436,6 +448,20 @@ Without these tools, the development of this project would have been **impossibl
 [NodeJS-url]: https://nodejs.org/
 [Npm-logo]: https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=fff&style=for-the-badge
 [Npm-url]: https://www.npmjs.com/
+[PostCSS-logo]: https://img.shields.io/badge/PostCSS-DD3A0A?style=for-the-badge&logo=postcss&logoColor=white
+[PostCSS-url]: https://postcss.org/
+[Autoprefixer-logo]: https://img.shields.io/badge/Autoprefixer-DD3A0A?style=for-the-badge&logo=autoprefixer&logoColor=white
+[Autoprefixer-url]: https://github.com/postcss/autoprefixer
+[Browserslist-logo]: https://custom-icon-badges.demolab.com/badge/browserslist-1d1d1d?logo=browserslist&style=for-the-badge
+[Browserslist-url]: https://github.com/browserslist/browserslist
+[esbuild-logo]: https://img.shields.io/badge/esbuild-%23FFCF00.svg?style=for-the-badge&logo=esbuild&logoColor=black
+[esbuild-url]: https://esbuild.github.io/
+[BrowserSync-logo]: https://custom-icon-badges.demolab.com/badge/BrowserSync-F24747?logo=browsersync-white&style=for-the-badge
+[BrowserSync-url]: https://browsersync.io/
+[Prettier-logo]: https://img.shields.io/badge/prettier-%23F7B93E.svg?style=for-the-badge&logo=prettier&logoColor=black
+[Prettier-url]: https://prettier.io/
+[EditorConfig-logo]: https://custom-icon-badges.demolab.com/badge/EditorConfig-010101?logo=editorconfig&style=for-the-badge
+[EditorConfig-url]: https://editorconfig.org/
 [Opera-logo]: https://img.shields.io/badge/Opera-FF1B2D?logo=Opera&logoColor=white&style=for-the-badge
 [Opera-url]: https://www.opera.com/
 [GoogleChrome-logo]: https://img.shields.io/badge/Google%20Chrome-4285F4?logo=GoogleChrome&logoColor=white&style=for-the-badge
@@ -448,3 +474,22 @@ Without these tools, the development of this project would have been **impossibl
 [Yandex-url]: https://browser.yandex.com/
 [interface-preview-gif]: docs/preview/interface.gif
 [adaptive-preview-gif]: docs/preview/adaptive_design.gif
+
+<!-- ! 🚀 ┌──────────────────────────────────────┐ -->
+<!-- ! 🚀 │       GIF MERGE & OPTIMIZATION       │ -->
+<!-- ! 🚀 └──────────────────────────────────────┘ -->
+<!-- ! ⚠️ WARNING: Input GIFs must have the EXACT SAME HEIGHT, or FFmpeg will fail! -->
+
+<!-- * 🛠️ STEP 1: HORIZONTAL MERGE (FFmpeg) -->
+<!-- * ffmpeg -i desktop.gif -i mobile.gif -filter_complex "[0]pad=iw+12:ih:0:0:color=0x00000000[left];[left][1]hstack,fps=20,split[x][z];[x]palettegen=stats_mode=diff[p];[z][p]paletteuse=dither=bayer:bayer_scale=3" combined.gif -->
+
+<!-- * Under the hood: -->
+<!-- * 💡 [0]pad=iw+12 -> adds a 12px transparent gap between GIFs -->
+<!-- * 💡 hstack       -> stacks horizontally (use vstack for vertical) -->
+<!-- * 💡 fps=20       -> caps the framerate -->
+
+<!-- ? ⚡ STEP 2: COMPRESSION (Gifsicle) -->
+<!-- ? gifsicle -O3 combined.gif -o combined_optimized.gif -->
+
+<!-- ? Under the hood: -->
+<!-- ? 💡 -O3 -> enables maximum optimization level (drastically drops file size) -->

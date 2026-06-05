@@ -63,16 +63,18 @@
       <ul>
         <li><a href="#дизайн">Дизайн</a></li>
         <li>
-          <a href="#preview">Предпросмотр</a>
+          <a href="#предпросмотр">Предпросмотр</a>
           <ul>
             <li><a href="#interface-preview">Интерфейс (Desktop + Mobile)</a></li>
             <li><a href="#adaptive-preview">Демонстрация адаптива</a></li>
           </ul>
         </li>
-        <li><a href="#ключевые-особенности">Ключевые особенности</a></li>
-        <ul>
-          <li><a href="#google-lighthouse-benchmark">Google Lighthouse Benchmark</a></li>
-        </ul>
+        <li>
+          <a href="#ключевые-особенности">Ключевые особенности</a>
+          <ul>
+            <li><a href="#google-lighthouse-benchmark">Google Lighthouse Benchmark</a></li>
+          </ul>
+        </li>
         <li><a href="#используемые-технологии">Используемые технологии</a></li>
         <li><a href="#структура-проекта">Структура проекта</a></li>
         <li><a href="#поддерживаемые-браузеры">Поддерживаемые браузеры</a></li>
@@ -135,14 +137,15 @@
 
 ### Ключевые особенности
 
-- **Responsive Design**: Полная адаптивность интерфейса для Desktop, Tablet и Mobile устройств реализована через каскадные медиа-запросы.
-- **Pixel Perfect Fidelity**: Строгое соответствие реализованной верстки исходному дизайн-макету с соблюдением всех параметров сетки и отступов.
-- **Enhanced UI/UX**: Внедрение плавных анимаций и микро-взаимодействий для повышения интерактивности интерфейса.
-- **BEM Methodology**: Применение системы именования `Block-Element-Modifier` для обеспечения изоляции стилей и расширяемости кода.
-- **Modern Build Workflow**: Использование современной инструментальной цепочки для расширения возможностей стандартных CSS и JavaScript.
-- **Static Architecture**: Проект реализован как статическое веб-приложение без использования CMS или Server-Side Rendering (SSR).
-- **Performance Optimization**: Высокие показатели производительности подтверждены **100/100 баллами в [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) в категории Performance** и **90+ по остальным метрикам**.
-- **Template Versatility**: Модульная структура проекта позволяет использовать его в качестве надежного шаблона для разработки аналогичных статических решений.
+- **Адаптивный дизайн (Responsive Design)**: Полная адаптивность интерфейса для Desktop, Tablet и Mobile устройств реализована через каскадные медиа-запросы.
+- **Точность Pixel Perfect**: Строгое соответствие реализованной верстки исходному дизайн-макету с соблюдением всех параметров сетки и отступов.
+- **Улучшенный UI/UX**: Внедрение плавных анимаций и микро-взаимодействий для повышения интерактивности интерфейса.
+- **Методология БЭМ**: Применение системы именования `Block-Element-Modifier` для обеспечения изоляции стилей и расширяемости кода.
+- **Современный процесс сборки**: Использование современной инструментальной цепочки для расширения возможностей стандартных CSS и JavaScript.
+- **Статическая архитектура**: Проект реализован как статическое веб-приложение без использования CMS или Server-Side Rendering (SSR).
+- **Оптимизация производительности**: Высокие показатели производительности подтверждены **100/100 баллами в [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) в категории Performance** и **90+ по остальным метрикам**.
+- **Универсальность шаблона**: Модульная структура проекта позволяет использовать его в качестве надежного шаблона для разработки аналогичных статических решений.
+- **Кроссбраузерная стабильность CSS**: Автоматическое добавление вендорных префиксов через PostCSS + Autoprefixer обеспечивает одинаковое отображение стилей во всех [поддерживаемых браузерах](#поддерживаемые-браузеры).
 
 #### Google Lighthouse Benchmark
 
@@ -160,16 +163,27 @@
 
 Проект создан с использованием следующих инструментов и технологий:
 
-- **FRONTEND**:
+- **Environment**:
+  - [![Node.js][NodeJS-logo]][NodeJS-url]
+    - [![npm][Npm-logo]][Npm-url]
+
+- **Frontend**:
   - [![HTML][HTML-logo]][HTML-url]
   - [![Sass][Sass-logo]][Sass-url]
   - [![TypeScript][TypeScript-logo]][TypeScript-url]
 
-  - **BUILD TOOLS**:
-    - [![Node.js][NodeJS-logo]][NodeJS-url]
-    - [![Npm][Npm-logo]][Npm-url]
+- **Build Tools**:
+  - [![esbuild][esbuild-logo]][esbuild-url]
+  - [![BrowserSync][BrowserSync-logo]][BrowserSync-url]
+  - [![PostCSS][PostCSS-logo]][PostCSS-url]
+    - [![Autoprefixer][Autoprefixer-logo]][Autoprefixer-url]
+      - [![Browserslist][Browserslist-logo]][Browserslist-url]
 
-- **VERSION CONTROL SYSTEM**:
+- **Code Quality**:
+  - [![EditorConfig][EditorConfig-logo]][EditorConfig-url]
+  - [![Prettier][Prettier-logo]][Prettier-url]
+
+- **Version Control**:
   - [![Git][Git-logo]][Git-url]
 
 ### Структура проекта
@@ -194,7 +208,6 @@ Space-Tourism-Website/
 │   ├── assets/               # изображения и статические ресурсы
 │   ├── css/
 │   ├── js/
-│   │
 │   ├── apple-touch-icon.png
 │   ├── crew.html
 │   ├── destination.html
@@ -292,26 +305,20 @@ npm run serve
 
 <div align="center">
 
-|         Команда          |                                            Описание                                             |
+|         Command          |                                           Description                                           |
 | :----------------------: | :---------------------------------------------------------------------------------------------: |
-|     `npm run clean`      |                      Удаление всех скомпилированных ранее CSS и JS файлов                       |
-|    `npm run build:ts`    |                                  Компиляция обычных JS-файлов                                   |
-|  `npm run build:ts:min`  |                              Компиляция минифицированных JS-файлов                              |
-|  `npm run build:ts:all`  |                         Компиляция обычных и минифицированных JS-файлов                         |
-|   `npm run build:scss`   |                                  Компиляция обычных CSS-файлов                                  |
-| `npm run build:scss:min` |                             Компиляция минифицированных CSS-файлов                              |
-| `npm run build:scss:all` |                        Компиляция обычных и минифицированных CSS-файлов                         |
-|    `npm run watch:ts`    |               Автоматическая компиляция обычных JS-файлов при изменении TS-файлов               |
-|  `npm run watch:ts:min`  |          Автоматическая компиляция минифицированных JS-файлов при изменении TS-файлов           |
-|  `npm run watch:ts:all`  |     Автоматическая компиляция обычных и минифицированных JS-файлов при изменении TS-файлов      |
-|   `npm run watch:scss`   |          Автоматическая компиляция обычных CSS-файлов при изменении SCSS-файлов (Sass)          |
-| `npm run watch:scss:min` |     Автоматическая компиляция минифицированных CSS-файлов при изменении SCSS-файлов (Sass)      |
-| `npm run watch:scss:all` | Автоматическая компиляция обычных и минифицированных JS-файлов при изменении SCSS-файлов (Sass) |
-|     `npm run watch`      |                    Автоматическая компиляция JS и CSS при изменении TS/SCSS                     |
-|  `npm run build:debug`   |                      Сборка обычных JS и CSS одновременно (для разработки)                      |
-| `npm run build:release`  |                         Сборка минифицированных JS и CSS для продакшена                         |
-|     `npm run serve`      |             Запуск локального сервера (`localhost`, для разработки / тестирования)              |
-|     `npm run start`      |                 Сборка JS и CSS в режиме `release` + запуск локального сервера                  |
+|     `npm run clean`      |                 Удалить папки со скомпилированными файлами CSS и JS (`rimraf`)                  |
+|    `npm run build:ts`    |                    Скомпилировать обычные JS-бандлы через `esbuild` (ES2015)                    |
+|  `npm run build:ts:min`  |             Скомпилировать минифицированные JS-бандлы с сорсмапами через `esbuild`              |
+|   `npm run build:scss`   |         Скомпилировать обычный CSS через `sass` и обработать `PostCSS` + `Autoprefixer`         |
+| `npm run build:scss:min` |    Скомпилировать минифицированный CSS с сорсмапами и обработать `PostCSS` + `Autoprefixer`     |
+|    `npm run watch:ts`    |            Отслеживать изменения TS-файлов и автоматически компилировать обычный JS             |
+|   `npm run watch:scss`   |           Отслеживать изменения SCSS-файлов и автоматически компилировать обычный CSS           |
+|     `npm run watch`      |                   Запустить вотчеры для JS и CSS параллельно (`npm-run-all`)                    |
+|  `npm run build:debug`   |                    Очистить выходные папки и собрать обычные CSS и JS файлы                     |
+| `npm run build:release`  |                Очистить выходные папки и собрать минифицированные CSS и JS файлы                |
+|     `npm run serve`      |            Запустить локальный сервер `BrowserSync` для отслеживания папки `public/`            |
+|     `npm run start`      | Выполнить сборку `build:release` и запустить локальный сервер с автоперезагрузкой (live reload) |
 
 </div>
 
@@ -323,19 +330,19 @@ npm run serve
 - **Архитектура типографики**: Реализована система Sass-миксинов для управления шрифтами. Это позволило инкапсулировать параметры текста (размер, интерлиньяж, начертание) и переиспользовать их в стилях компонентов, избегая дублирования кода и упрощая масштабирование.
 - **Архитектура Sass**: Организация многофайловой структуры стилей с четким разделением на глобальные переменные, миксины, компоненты и специфичные стили страниц.
 - **Сложность адаптивной верстки**: Управление большим количеством медиа-запросов, где различия часто сводились к 1–2 свойствам, что требовало высокой точности при отладке и проверке соответствия макету.
-- **Кастомизация tap-отклика**: Отключение нативных системных выделений для кнопок-ссылок (`<a>`) на мобильных устройствах для устранения визуальных артефактов при клике.
-- **Исправление «липкого» hover**: Устранение бага мобильных браузеров, при котором кнопки сохраняли состояние :hover после навигации назад по истории. Проблема решена через использование медиа-запроса `@media (hover: hover)`.
+- **Кастомизация tap-отклика**: Отключение нативных системных выделений для ссылок и интерактивных элементов на мобильных устройствах для устранения визуальных артефактов при клике.
+- **Исправление «липкого» hover**: Устранение бага мобильных браузеров, при котором кнопки сохраняли состояние `:hover` после нажатия или навигации назад по истории. Проблема решена через использование медиа-запроса `@media (hover: hover)`.
 
 <p align="right">(<a href="#readme-top">наверх</a>)</p>
 
 ## Полученные навыки
 
-- **UI/UX Implementation**: Опыт точного переноса сложных дизайн-макетов в семантическую HTML-разметку с сохранением pixel-perfect соответствия.
-- **Архитектура стилей (BEM)**: Проектирование масштабируемой и поддерживаемой CSS-структуры по методологии БЭМ, исключающей конфликты специфичности.
-- **Client-side Logic (TypeScript)**: Разработка типобезопасной логики для интерактивных компонентов (табы, пагинация) с использованием TypeScript для обеспечения стабильности и читаемости кода.
-- **Responsive Web Design**: Создание отказоустойчивых адаптивных интерфейсов для многостраничных приложений с глубокой проработкой мобильного UX.
-- **Оптимизация загрузки страниц**: Повышение скорости отрисовки (LCP) через внедрение формата `.webp`, умеренное сжатие ресурсов с минимальной потерей качества и использование неблокирующей загрузки скриптов (`async/defer`).
-- **Workflow & CI/CD**: Профессиональное ведение Git-репозитория, работа с ветками, управление зависимостями через `npm` и документирование архитектуры проекта.
+- **Реализация UI/UX интерфейсов**: Опыт точного переноса сложных дизайн-макетов в семантическую HTML-разметку с сохранением pixel-perfect соответствия.
+- **Архитектура стилей (БЭМ)**: Проектирование масштабируемой и поддерживаемой CSS-структуры по методологии БЭМ, исключающей конфликты специфичности селекторов.
+- **Клиентская логика (TypeScript)**: Разработка типобезопасной логики для интерактивных компонентов (табы, пагинация) с использованием TypeScript для обеспечения стабильности и читаемости кода.
+- **Адаптивная веб-верстка**: Создание отказоустойчивых адаптивных интерфейсов для многостраничных приложений с глубокой проработкой мобильного UX.
+- **Оптимизация загрузки страниц**: Повышение скорости отрисовки (LCP) через внедрение формата `.webp`, умеренное сжатие ресурсов с минимальной потерей качества и использование неблокирующей загрузки скриптов (`async`/`defer`).
+- **Организация рабочего процесса (Workflow)**: Профессиональное ведение Git-репозитория, работа с ветками, управление зависимостями через `npm` и документирование архитектуры проекта.
 
 <p align="right">(<a href="#readme-top">наверх</a>)</p>
 
@@ -351,7 +358,7 @@ npm run serve
 - [x] Реализация интерактивной логики табов и пагинации на TypeScript
 - [x] Внедрение адаптивности для планшетных устройств (**Tablet**)
 - [x] Внедрение адаптивности для мобильных устройств (**Mobile**)
-- [x] Верификация соответствия результата дизайн-макету (**QA**)
+- [x] Верификация соответствия результата дизайн-макету (**Quality Assurance**)
 - [x] Подготовка технической документации и `README.md`
 
 Полный список планируемых функций и известных проблем доступен в разделе [Issues][issues-url].
@@ -391,7 +398,6 @@ Email: [aleethey@gmail.com](mailto:aleethey@gmail.com)
 [aLeeTheY](https://github.com/aLeeTheY) выражает благодарность разработчикам и сообществам следующих проектов:
 
 - [Figma](https://www.figma.com/)
-- [Frontend Mentor](https://www.frontendmentor.io/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Sass](https://sass-lang.com/)
 - [TypeScript](https://www.typescriptlang.org/)
@@ -404,6 +410,12 @@ Email: [aleethey@gmail.com](mailto:aleethey@gmail.com)
 - [gifsicle](https://github.com/kohler/gifsicle)
 - [Chrome DevTools](https://developer.chrome.com/docs/devtools)
 - [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview)
+- [Browsersync](https://browsersync.io/)
+- [EditorConfig](https://editorconfig.org/)
+- [Prettier](https://prettier.io/)
+- [PostCSS](https://postcss.org/)
+- [autoprefixer](https://github.com/postcss/autoprefixer)
+- [browserslist](https://github.com/browserslist/browserslist)
 
 Без этих инструментов разработка данного проекта была бы **невозможна**.
 
@@ -436,6 +448,20 @@ Email: [aleethey@gmail.com](mailto:aleethey@gmail.com)
 [NodeJS-url]: https://nodejs.org/
 [Npm-logo]: https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=fff&style=for-the-badge
 [Npm-url]: https://www.npmjs.com/
+[PostCSS-logo]: https://img.shields.io/badge/PostCSS-DD3A0A?style=for-the-badge&logo=postcss&logoColor=white
+[PostCSS-url]: https://postcss.org/
+[Autoprefixer-logo]: https://img.shields.io/badge/Autoprefixer-DD3A0A?style=for-the-badge&logo=autoprefixer&logoColor=white
+[Autoprefixer-url]: https://github.com/postcss/autoprefixer
+[Browserslist-logo]: https://custom-icon-badges.demolab.com/badge/browserslist-1d1d1d?logo=browserslist&style=for-the-badge
+[Browserslist-url]: https://github.com/browserslist/browserslist
+[esbuild-logo]: https://img.shields.io/badge/esbuild-%23FFCF00.svg?style=for-the-badge&logo=esbuild&logoColor=black
+[esbuild-url]: https://esbuild.github.io/
+[BrowserSync-logo]: https://custom-icon-badges.demolab.com/badge/BrowserSync-F24747?logo=browsersync-white&style=for-the-badge
+[BrowserSync-url]: https://browsersync.io/
+[Prettier-logo]: https://img.shields.io/badge/prettier-%23F7B93E.svg?style=for-the-badge&logo=prettier&logoColor=black
+[Prettier-url]: https://prettier.io/
+[EditorConfig-logo]: https://custom-icon-badges.demolab.com/badge/EditorConfig-010101?logo=editorconfig&style=for-the-badge
+[EditorConfig-url]: https://editorconfig.org/
 [Opera-logo]: https://img.shields.io/badge/Opera-FF1B2D?logo=Opera&logoColor=white&style=for-the-badge
 [Opera-url]: https://www.opera.com/
 [GoogleChrome-logo]: https://img.shields.io/badge/Google%20Chrome-4285F4?logo=GoogleChrome&logoColor=white&style=for-the-badge
@@ -448,3 +474,22 @@ Email: [aleethey@gmail.com](mailto:aleethey@gmail.com)
 [Yandex-url]: https://browser.yandex.com/
 [interface-preview-gif]: docs/preview/interface.gif
 [adaptive-preview-gif]: docs/preview/adaptive_design.gif
+
+<!-- ! 🚀 ┌──────────────────────────────────────┐ -->
+<!-- ! 🚀 │       GIF MERGE & OPTIMIZATION       │ -->
+<!-- ! 🚀 └──────────────────────────────────────┘ -->
+<!-- ! ⚠️ WARNING: Input GIFs must have the EXACT SAME HEIGHT, or FFmpeg will fail! -->
+
+<!-- * 🛠️ STEP 1: HORIZONTAL MERGE (FFmpeg) -->
+<!-- * ffmpeg -i desktop.gif -i mobile.gif -filter_complex "[0]pad=iw+12:ih:0:0:color=0x00000000[left];[left][1]hstack,fps=20,split[x][z];[x]palettegen=stats_mode=diff[p];[z][p]paletteuse=dither=bayer:bayer_scale=3" combined.gif -->
+
+<!-- * Under the hood: -->
+<!-- * 💡 [0]pad=iw+12 -> adds a 12px transparent gap between GIFs -->
+<!-- * 💡 hstack       -> stacks horizontally (use vstack for vertical) -->
+<!-- * 💡 fps=20       -> caps the framerate -->
+
+<!-- ? ⚡ STEP 2: COMPRESSION (Gifsicle) -->
+<!-- ? gifsicle -O3 combined.gif -o combined_optimized.gif -->
+
+<!-- ? Under the hood: -->
+<!-- ? 💡 -O3 -> enables maximum optimization level (drastically drops file size) -->
