@@ -125,7 +125,7 @@
 
 #### Демонстрация интерфейса (Desktop + Mobile) <a id="interface-preview"></a>
 
-[![Интерфейс проекта][interface-preview-gif]](https://aleethey.github.io/Space-Tourism-Website/)
+[![Демонстрация интерфейса][interface-preview-gif]](https://aleethey.github.io/Space-Tourism-Website/)
 
 <br />
 
