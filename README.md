@@ -194,20 +194,22 @@
 Space-Tourism-Website/
 │
 ├── .vscode/
-│   └── tasks.json            # файл расширения `spencerwmiles.vscode-task-buttons`
+│   └── tasks.json            # Файл расширения `spencerwmiles.vscode-task-buttons`
 │
-├── docs/                     # проектная документация
+├── docs/                     # Проектная документация
 │   ├── benchmark/
 │   │   ├── lighthouse__index_desktop.avif
 │   │   └── lighthouse__index_mobile.avif
+│   │
 │   └── preview/
 │       ├── adaptive_design.gif
 │       └── interface.gif
 │
-├── public/                   # скомпилированные файлы проекта и ассеты
-│   ├── assets/               # изображения и статические ресурсы
+├── public/                   # Скомпилированные файлы проекта и ассеты
+│   ├── assets/               # Изображения и статические ресурсы
 │   ├── css/
 │   ├── js/
+│   │
 │   ├── apple-touch-icon.png
 │   ├── crew.html
 │   ├── destination.html
@@ -223,19 +225,19 @@ Space-Tourism-Website/
 │   └── web-app-manifest-512x512.png
 │
 ├── src/
-│   ├── scss/                 # исходные Sass-файлы
-│   └── ts/                   # исходные TypeScript-файлы
+│   ├── scss/                 # Исходные Sass-файлы
+│   └── ts/                   # Исходные TypeScript-файлы
 │
 ├── .browserslistrc
 ├── .editorconfig
 ├── .gitignore
 ├── LICENSE
 ├── package-lock.json
-├── package.json              # конфигурация проекта и зависимости
+├── package.json              # Конфигурация проекта и зависимости
 ├── prettier.config.mts
 ├── README.EN.md
 ├── README.md
-└── tsconfig.json             # настройки TypeScript
+└── tsconfig.json             # Настройки TypeScript
 ```
 
 ### Поддерживаемые браузеры

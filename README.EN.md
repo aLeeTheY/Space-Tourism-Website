@@ -194,20 +194,22 @@ Main directories and files:
 Space-Tourism-Website/
 │
 ├── .vscode/
-│   └── tasks.json            # extension file for `spencerwmiles.vscode-task-buttons`
+│   └── tasks.json            # Extension file for `spencerwmiles.vscode-task-buttons`
 │
-├── docs/                     # project documentation
+├── docs/                     # Project documentation
 │   ├── benchmark/
 │   │   ├── lighthouse__index_desktop.avif
 │   │   └── lighthouse__index_mobile.avif
+│   │
 │   └── preview/
 │       ├── adaptive_design.gif
 │       └── interface.gif
 │
-├── public/                   # compiled project files and assets
-│   ├── assets/               # images and static resources
+├── public/                   # Compiled project files and production assets
+│   ├── assets/               # Images and static resources
 │   ├── css/
 │   ├── js/
+│   │
 │   ├── apple-touch-icon.png
 │   ├── crew.html
 │   ├── destination.html
@@ -223,19 +225,19 @@ Space-Tourism-Website/
 │   └── web-app-manifest-512x512.png
 │
 ├── src/
-│   ├── scss/                 # source Sass files
-│   └── ts/                   # source TypeScript files
+│   ├── scss/                 # Source Sass files
+│   └── ts/                   # Source TypeScript files
 │
 ├── .browserslistrc
 ├── .editorconfig
 ├── .gitignore
 ├── LICENSE
 ├── package-lock.json
-├── package.json              # project configuration and dependencies
+├── package.json              # Project configuration and dependencies
 ├── prettier.config.mts
 ├── README.EN.md
 ├── README.md
-└── tsconfig.json             # TypeScript configuration
+└── tsconfig.json             # TypeScript configuration settings
 ```
 
 ### Supported Browsers
