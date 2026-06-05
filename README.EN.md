@@ -38,7 +38,7 @@
   <h1 align="center">Space Tourism Website</h1>
 
   <p align="center">
-    🚀 Multi-page website for the Space Tourism company with responsive layout.
+    🚀 Multi-page website for the Space Tourism company with adaptive layout.
     <br />
     <br />
     <a href="https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3">Design (Layout)</a>
