@@ -66,7 +66,7 @@
           <a href="#preview">Preview</a>
           <ul>
             <li><a href="#interface-preview">Interface Showcase (Desktop + Mobile)</a></li>
-            <li><a href="#adaptive-preview">Adaptive Design Showcase</a></li>
+            <li><a href="#adaptive-preview">Adaptive Design Showcase (DevTools Stretch Test)</a></li>
           </ul>
         </li>
         <li>
@@ -119,7 +119,7 @@ The visual component is based on the [**Space Tourism**](https://www.frontendmen
 
 <!-- Below you can see a **website preview** (_**Desktop + Mobile**, click the image to open the live demo_): -->
 
-Below is an **interactive demonstration** of the project (_click on either image to visit the live demo_):
+Below is an **interactive demonstration** of the project (_click on any preview image to open the live demo_):
 
 <div align="center">
 
@@ -129,7 +129,7 @@ Below is an **interactive demonstration** of the project (_click on either image
 
 <br />
 
-#### Adaptive Design Showcase <a id="adaptive-preview"></a>
+#### Adaptive Design Showcase (DevTools Stretch Test) <a id="adaptive-preview"></a>
 
 [![Adaptive Design Showcase][adaptive-preview-gif]](https://aleethey.github.io/Space-Tourism-Website/)
 

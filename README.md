@@ -65,8 +65,8 @@
         <li>
           <a href="#предпросмотр">Предпросмотр</a>
           <ul>
-            <li><a href="#interface-preview">Интерфейс (Desktop + Mobile)</a></li>
-            <li><a href="#adaptive-preview">Демонстрация адаптива</a></li>
+            <li><a href="#interface-preview">Демонстрация интерфейса (Desktop + Mobile)</a></li>
+            <li><a href="#adaptive-preview">Демонстрация адаптива (DevTools Stretch Test)</a></li>
           </ul>
         </li>
         <li>
@@ -119,17 +119,17 @@
 
 <!-- Ниже представлен **предварительный просмотр** сайта (_**Desktop + Mobile**, нажмите на изображение для перехода к демо_): -->
 
-Ниже представлена **интерактивная демонстрация** проекта (_нажмите на любое изображение для перехода к живому демо_):
+Ниже представлена **интерактивная демонстрация** проекта (_нажмите на любое изображение для перехода к live-демо_):
 
 <div align="center">
 
-#### Интерфейс (Desktop + Mobile) <a id="interface-preview"></a>
+#### Демонстрация интерфейса (Desktop + Mobile) <a id="interface-preview"></a>
 
 [![Интерфейс проекта][interface-preview-gif]](https://aleethey.github.io/Space-Tourism-Website/)
 
 <br />
 
-#### Демонстрация адаптива <a id="adaptive-preview"></a>
+#### Демонстрация адаптива (DevTools Stretch Test) <a id="adaptive-preview"></a>
 
 [![Демонстрация адаптива][adaptive-preview-gif]](https://aleethey.github.io/Space-Tourism-Website/)
 
